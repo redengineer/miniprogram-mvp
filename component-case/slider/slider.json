@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "滑动选择器",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index"
+    }
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <!-- canIUse -->
+  <showbox title="检验api是否可用">
+    <box>
+      <view>
+        <text>返回值：{{content}}</text>
+        <view class="_ui-input _my8">
+          <input placeholder="输入api调用" type="text" bindinput="bindinput"></input>
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="click">检索</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

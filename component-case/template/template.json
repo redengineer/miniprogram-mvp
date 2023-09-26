@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "模版引用",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index",
+        "example": "../../common/component/example/index"
+    }
+}

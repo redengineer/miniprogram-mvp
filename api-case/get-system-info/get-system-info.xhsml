@@ -1,0 +1,18 @@
+<view class="container">
+  <showbox title="获取手机信息">
+    <box>
+      <view class="_ui-space">
+          <view>手机品牌：{{systemInfo.brand}}</view>
+          <view>手机型号：{{systemInfo.model}}</view>
+          <view>小红书语言：{{systemInfo.language}}</view>
+          <view>小红书版本：{{systemInfo.version}}</view>
+          <view>屏幕宽度：{{systemInfo.windowWidth}}</view>
+          <view>屏幕高度：{{systemInfo.windowHeight}}</view>
+          <view>DPR：{{systemInfo.pixelRatio}}</view>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getSystemInfo">获取手机系统信息</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getSystemInfoSync">同步获取手机系统信息</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

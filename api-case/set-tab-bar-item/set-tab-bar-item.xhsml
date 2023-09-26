@@ -1,0 +1,23 @@
+<view class="container">
+  <showbox title="设置TabBar">
+    <box>
+      <view class="_ui-space">
+        <view class="_ui-input">
+          <input type="text" placeholder="tabBar索引(从0开始)" bindinput="handleIndex"/>
+        </view>
+        <view class="_ui-input">
+          <input  type="text" placeholder="tabBar文字" bindinput="handleText"/>
+        </view>
+        <view class="_ui-input">
+          <input  type="text" placeholder="tabBar未选中图片地址" bindinput="handleIconPath"/>
+        </view>
+        <view class="_ui-input">
+          <input  type="text" placeholder="tabBar选中图片地址" bindinput="handleSelectIconPath"/>
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="setTabBarItem">设置</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="showTabBar">显示tabBar</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="hideTabBarAnimate">隐藏tabBar</button>
+      </view>
+    </box>
+</view>
+<include src="templates.xhsml" />

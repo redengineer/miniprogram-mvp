@@ -1,0 +1,11 @@
+<view class="container">
+  <showbox title="登陆">
+    <box>
+      <view>
+        <view>{{hasLogin === true ? '已登录':'未登录'}}</view>
+        <button class="_ui-button _mt8" hover-class="_ui-button-hover" type="primary" bindtap="login">小红书登录</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

@@ -1,0 +1,28 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="login演示">
+    <box>
+      <api-status
+        success="{{page_data_1}}"
+        complete="{{page_data_3}}"
+        fail="{{page_data_2}}"
+        text="{{page_data_4}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="timeout" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

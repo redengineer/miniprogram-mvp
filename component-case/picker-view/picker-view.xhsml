@@ -1,0 +1,41 @@
+<view class="container">
+  <showbox title="基础使用">
+    <box>
+      <view>当前选择: {{year}}年{{month}}月{{day}}日{{isDaytime ? "白天" : "夜晚"}}</view>
+      <view class="_my8">
+        <picker-view
+          indicator-style="{{indicatorStyle}}"
+          mask-style="{{maskStyle}}"
+          style="width: 100%; height: 300px;"
+          value="{{value}}"
+          bindchange="bindChange"
+          bindpickstart="bindpickstart"
+          bindpickend="bindpickend"
+    
+        >
+          <picker-view-column>
+            <view xhs:for="{{years}}" style="line-height: 50px; text-align: center;color:black;">{{item}}年</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view xhs:for="{{months}}" style="line-height: 50px; text-align: center;color:black;">{{item}}月</view>
+          </picker-view-column>
+          <picker-view-column>
+            <block  xhs:for="{{days[value[1]]}}">
+              <view style="line-height: 50px; text-align: center;color:black;">{{item}}日</view>
+            </block>
+          </picker-view-column>
+          <picker-view-column>
+            <view class="icon-container">
+              白天
+            </view>
+            <view class="icon-container">
+              黑夜
+            </view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

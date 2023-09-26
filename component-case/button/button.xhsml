@@ -1,0 +1,106 @@
+<view class="container">
+  <showbox title="一级按钮">
+    <box class="box">
+      <view>
+        <button class="_ui-button" hover-class="_ui-button-hover">
+          一级按钮 Normal
+        </button>
+  
+        <button class="button_disabled _mt8" disabled>
+          一级按钮 Disabled
+        </button>
+      </view>
+
+      <view class="_mt8">
+        <button class="_ui-button _px10" size="mini" hover-class="_ui-button-hover">
+          一级按钮
+        </button>
+
+        <button class="button_disabled _px10 _ml8" disabled size="mini">
+          一级按钮
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="二级按钮">
+    <box class="box">
+      <view>
+        <button class="_ui-button-transparent">
+          二级按钮 Normal
+        </button>
+  
+        <button class="_ui-button-transparent-disabled  _mt8" disabled>
+          二级按钮 Disabled
+        </button>
+      </view>
+
+      <view class="_mt8">
+        <button class="_ui-button-transparent  _px10" size="mini">
+          二级按钮
+        </button>
+
+        <button class="_ui-button-transparent-disabled  _px10 _ml8" disabled size="mini">
+          二级按钮
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="三级按钮">
+    <box class="box">
+      <view>
+        <button class="_ui-button-gray" hover-class="none">
+          三级按钮 Normal
+        </button>
+  
+        <button class=" _mt8" disabled>
+          三级按钮 Disabled
+        </button>
+      </view>
+
+      <view class="_mt8">
+        <button class="_ui-button-gray _px10" size="mini" hover-class="none">
+          三级按钮
+        </button>
+
+        <button class="_px10 _ml8" disabled size="mini">
+          三级按钮
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="四级按钮">
+    <box class="box">
+      <view>
+        <button class="_ui-button-transparent-gray" hover-class="none">
+          四级按钮 Normal
+        </button>
+  
+        <button class="_ui-button-transparent-disabled  _mt8" disabled>
+          四级按钮 Disabled
+        </button>
+      </view>
+
+      <view class="_mt8">
+        <button class="_ui-button-transparent-gray _px10" size="mini" hover-class="none">
+          四级按钮
+        </button>
+
+        <button class="_ui-button-transparent-disabled  _px10 _ml8" disabled size="mini">
+          四级按钮
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="加载状态">
+    <box>
+      <button loading="{{loading}}" class="_ui-button" hover-class="_ui-button-hover" bindtap="changeLoading">
+        点击切换按钮loading状态
+      </button>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

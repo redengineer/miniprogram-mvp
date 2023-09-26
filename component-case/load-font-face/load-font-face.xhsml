@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info display-area {{ loaded ? 'font-loaded' : '' }}">
+        <text xhs:if="{{!loaded}}">Load {{ fontFamily }}</text>
+        <text xhs:else>{{ fontFamily }} is loaded</text>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="loadFontFace">加载字体</button>
+        <button type="default" bindtap="clear">清除</button>
+      </view>
+    </view>
+  </view>
+</view>

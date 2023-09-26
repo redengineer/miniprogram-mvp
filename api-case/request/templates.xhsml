@@ -1,0 +1,56 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="request演示">
+    <box>
+      <api-status
+        success="{{page_data_7}}"
+        complete="{{page_data_9}}"
+        fail="{{page_data_8}}"
+        text="{{page_data_10}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="data" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="header" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="timeout" type="text" bindinput="page_fun_4" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="method" type="text" bindinput="page_fun_5" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="dataType" type="text" bindinput="page_fun_6" />
+        </view>
+
+        <view class="_ui-input">
+          <input
+            placeholder="responseType"
+            type="text"
+            bindinput="page_fun_7"
+          />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

@@ -1,0 +1,54 @@
+<view class="container">
+  <showbox>
+    <box>
+      <view class="_ui-space">
+        <view>
+          <text>基础样式</text>
+          <slider value="50" bindchange="slider3change" activeColor="#ff2442"/>
+        </view>
+        <view>
+          <text>带数据样式</text>
+          <slider value="50" bindchange="slider3change" show-value activeColor="#ff2442"/>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="设置步长">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <text>步长20</text>
+          <slider value="20" bindchange="slider2change" step="20" activeColor="#ff2442" show-value/>
+        </view>
+        <view>
+          <text>步长10</text>
+          <slider value="40" bindchange="slider2change" step="10" activeColor="#ff2442" show-value/>
+        </view>
+        <view>
+          <text>步长5</text>
+          <slider value="60" bindchange="slider2change" step="5" activeColor="#ff2442" show-value/>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  
+
+  <showbox title="设置最大/最小值">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <text>最小值50</text>
+          <slider value="70" bindchange="slider4change" min="50" max="200" show-value activeColor="#ff2442"/>
+        </view>
+        <view>
+          <text>最大值200</text>
+          <slider value="200" bindchange="slider4change" min="50" max="200" show-value activeColor="#ff2442"/>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

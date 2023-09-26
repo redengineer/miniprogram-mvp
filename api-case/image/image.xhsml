@@ -1,0 +1,65 @@
+<view class="container">
+  <form>
+    <showbox title="选择图片">
+      <box>
+        <view class="_ui-space">
+          <view class="_ui-input">
+            <picker range="{{sourceType}}" bindchange="sourceTypeChange" value="{{sourceTypeIndex}}" mode="selector">
+              <view>图片来源: {{sourceType[sourceTypeIndex]}}</view>
+            </picker>
+          </view>
+  
+          <view class="_ui-input">
+            <picker range="{{sizeType}}" bindchange="sizeTypeChange" value="{{sizeTypeIndex}}" mode="selector">
+              <view>图片质量: {{sizeType[sizeTypeIndex]}}</view>
+            </picker>
+          </view>
+  
+          <view class="_ui-input">
+            <picker range="{{count}}" bindchange="countChange" value="{{countIndex}}" mode="selector">
+              <view>数量限制: {{count[countIndex]}}</view>
+            </picker>
+          </view>
+  
+          <view>
+            <view class="weui-uploader__title">点击可预览选好的图片({{imageList.length}}/{{count[countIndex]}})</view>
+            <view class="weui-uploader__files">
+              <block xhs:for="{{imageList}}" xhs:for-item="image">
+                <view class="weui-uploader__file">
+                  <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                </view>
+              </block>
+            </view>
+          </view>
+  
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="chooseImage">选择图片</button>
+        </view>
+      </box>
+    </showbox>
+
+    <showbox title="图片预览">
+      <box>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="previewImage">图片预览</button>
+      </box>
+    </showbox>
+
+    <showbox title="保存文件到本地">
+      <box>
+        <view class="_ui-input _mb8">
+          <input placeholder="保存图片地址" value="{{saveImageToPhotosAlbumLink}}" bindinput="handleSaveImageToPhotosAlbumLink" />
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="saveImageToPhotosAlbum">保存图片</button>
+      </box>
+    </showbox>
+
+    <showbox title="获取图片信息(网络图片)">
+      <box>
+        <view class="_text_wrap">
+          {{imageInfo}}
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getImageInfo">点击获取</button>
+      </box>
+    </showbox>
+  </form>
+</view>
+<include src="templates.xhsml" />

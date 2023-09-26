@@ -1,0 +1,35 @@
+.xhs-demo-card {
+  margin: 10px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.xhs-demo-card-title {
+  margin: 0 16px;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.xhs-demo-card-content {
+  background-color: #ffffff;
+}
+
+.xhs-demo-card-spiver{
+  position: relative;
+  border: 0;
+}
+
+.xhs-demo-card-spiver:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #efefef;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}

@@ -1,0 +1,9 @@
+<view class="container">
+  <showbox title="返回">
+    <box>
+      <navigator open-type="navigateBack">
+        <button class="_ui-button" hover-class="_ui-button-hover">navigateBack</button>
+      </navigator>
+    </box>
+  </showbox>
+</view>

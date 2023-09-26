@@ -1,0 +1,15 @@
+.container {
+  margin-bottom: 20px;
+}
+
+.container view{
+  text-align: center;
+}
+
+._ui-space > * {
+  margin-bottom: 20px;
+}
+
+._ui-space > *:last-child  {
+  margin-bottom: 0;
+}

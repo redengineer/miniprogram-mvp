@@ -1,0 +1,12 @@
+
+<view class="container">
+  <showbox title="获取账户信息">
+    <box>
+      <view class="_ui-space">
+        <view class="_text_wrap">账户信息：{{ret}}</view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getAccountInfoSync">获取账户信息</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

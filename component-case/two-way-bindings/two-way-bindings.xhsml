@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <input class="input" model:value="{{value}}" placeholder="请输入"/>
+      <view class="text">这是你输入的数据：{{value}}</view>
+    </view>
+  </view>
+</view>

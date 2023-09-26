@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.message-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  overflow: auto;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.message-item {
+  display: flex;
+  height: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.message-item > image {
+  width: 16px;
+  height: 16px;
+}
+.message-item > text {
+  padding: 0 10px;
+}
+
+.test-success {
+  box-shadow: inset 0 0 10px 10px rgba(0, 255, 0, 0.5);
+}
+
+.test-not-move-all-success {
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 255, 0.5);
+}
+
+.test-error {
+  box-shadow: inset 0 0 10px 10px rgba(255, 0, 0, 0.5);
+}
+
+.message-move-area {
+  height: 400px;
+  overflow: auto;
+}

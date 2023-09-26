@@ -1,0 +1,13 @@
+<view class="container">
+  <showbox title="基础使用">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="title">显示加载动画</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="fail">自定义加载文案</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="mask">带有遮罩层（不可点击）</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="hide">隐藏加载动画</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

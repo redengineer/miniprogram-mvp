@@ -1,0 +1,166 @@
+{
+  "pages": [
+    "entry/component/component",
+    "entry/api/api",
+    "entry/search/search",
+    "entry/guide/guide"
+  ],
+  "subPackages": [
+    {
+      "root": "component-case",
+      "name": "component-case",
+      "pages": [
+        "button/button",
+        "checkbox/checkbox",
+        "editor/editor",
+        "form/form",
+        "icon/icon",
+        "image/image",
+        "input/input",
+        "label/label",
+        "map/map",
+        "movable-area/movable-area",
+        "navigator/navigator",
+        "picker/picker",
+        "picker-view/picker-view",
+        "progress/progress",
+        "radio/radio",
+        "rich-text/rich-text",
+        "scroll-view/scroll-view",
+        "slider/slider",
+        "swiper/swiper",
+        "switch/switch",
+        "text/text",
+        "textarea/textarea",
+        "video/video",
+        "view/view",
+        "event/event",
+        "event-transition/event-transition",
+        "navigator/navigate",
+        "navigator/redirect",
+        "image/image2/index",
+        "webview/webview",
+        "cover-view/cover-view",
+        "camera/camera",
+        "camera-scan-code/camera-scan-code",
+        "map-styles/map-styles",
+        "websocket/websocket",
+        "share-button/share-button",
+        "on-compass-change/on-compass-change",
+        "voice/voice",
+        "background-audio/background-audio",
+        "load-font-face/load-font-face",
+        "add-contact/add-contact",
+        "capture-screen/capture-screen",
+        "ibeacon/ibeacon",
+        "audio/audio",
+        "bluetooth/bluetooth",
+        "two-way-bindings/two-way-bindings",
+        "timer/timer",
+        "eval/eval",
+        "lifecycle/lifecycle",
+        "template/template",
+        "include/include",
+        "component-communication/component-communication",
+        "event-message-queue/event-message-queue"
+      ],
+      "independent": false
+    },
+    {
+      "root": "api-case",
+      "name": "api-case",
+      "pages": [
+        "caniuse/caniuse",
+        "get-system-info/get-system-info",
+        "mp-update/mp-update",
+        "navigator/navigator",
+        "navigator/navigate",
+        "navigator/redirect",
+        "loading/loading",
+        "toast/toast",
+        "action-sheet/action-sheet",
+        "modal/modal",
+        "set-tab-bar-item/set-tab-bar-item",
+        "set-tab-bar-style/set-tab-bar-style",
+        "set-navigation-bar-color/set-navigation-bar-color",
+        "set-navigation-bar-title/set-navigation-bar-title",
+        "pull-down-refresh/pull-down-refresh",
+        "animation/animation",
+        "menu-button/menu-button",
+        "request/request",
+        "upload-file/upload-file",
+        "download-file/download-file",
+        "storage/storage",
+        "storage-async/storage-async",
+        "image/image",
+        "video/video",
+        "get-location/get-location",
+        "map/map",
+        "login/login",
+        "check-session/check-session",
+        "request-payment/request-payment",
+        "share/share",
+        "setting/setting",
+        "choose-address/choose-address",
+        "get-user-info/get-user-info",
+        "get-account-info-sync/get-account-info-sync",
+        "query/query",
+        "observer/observer",
+        "webview/webview",
+        "clipboard-data/clipboard-data",
+        "get-network-type/get-network-type",
+        "make-phone-call/make-phone-call",
+        "scan-code/scan-code",
+        "ext-config/ext-config",
+        "lifetime/lifetime",
+        "getLaunchOptionsSync/getLaunchOptionsSync"
+      ],
+      "independent": false
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f7f7f7"
+  },
+  "appid": "63e30be6f5674e00017a4576",
+  "tabBar": {
+    "color": "#33333366",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "entry/component/component",
+        "iconPath": "image/Status=Default.png",
+        "selectedIconPath": "image/Status=Filled.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "entry/api/api",
+        "iconPath": "image/Status=Default-1.png",
+        "selectedIconPath": "image/Status=Filled-1.png",
+        "text": "能力演示"
+      },
+      {
+        "pagePath": "entry/guide/guide",
+        "iconPath": "image/Status=Default-2.png",
+        "selectedIconPath": "image/Status=Filled-2.png",
+        "text": "运营指南"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

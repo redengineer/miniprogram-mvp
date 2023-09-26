@@ -1,0 +1,39 @@
+.container {
+  display: block;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.icon-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.icon-box-text{
+  word-break: break-all;
+  padding: 0 5px;
+}
+.icon-box-title{
+  font-size: 17px;
+}
+.icon-box-desc{
+  margin-top: 6px;
+  font-size: 13px;
+  color: #888;
+}
+
+.icon-small-wrp{
+  margin-right: 28px;
+  width: 93px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,30 @@
+
+.btn-area > view {
+  margin-bottom: 20px;
+}
+
+.model-title {
+  font-size: 12px;
+  padding-bottom: 16px;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.model-title text:first-child {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.model-title text:last-child {
+  color: #858585;
+}
+
+.setting-title {
+  font-size: 12px;
+  padding-bottom: 16px;
+  color: #858585;
+  text-align: center;
+}
+

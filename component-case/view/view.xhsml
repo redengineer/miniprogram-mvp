@@ -1,0 +1,23 @@
+<view class="container">
+  <showbox title="横向布局">
+    <box pad="10px">
+      <view class="flex-container-x">
+        <view class="flex-item demo-1">A</view>
+        <view class="flex-item demo-2">B</view>
+        <view class="flex-item demo-3">C</view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="纵向布局">
+    <box pad="10px">
+      <view class="flex-container-y">
+        <view class="flex-item demo-1">A</view>
+        <view class="flex-item demo-2">B</view>
+        <view class="flex-item demo-3">C</view>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

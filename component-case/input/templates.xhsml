@@ -1,0 +1,437 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="input演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <view class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              type="{{page_data_2[page_data_1]}}"
+              password="{{page_data_3}}"
+              placeholder="{{page_data_4}}"
+              placeholder-style="{{page_data_5}}"
+              placeholder-class="{{page_data_6}}"
+              disabled="{{page_data_7}}"
+              max-length="{{page_data_8}}"
+              focus="{{page_data_9}}"
+              cursor="{{page_data_10}}"
+              selection-start="{{page_data_11}}"
+              selection-end="{{page_data_12}}"
+              adjust-position="{{page_data_13}}"
+              confirm-type="{{page_data_15[page_data_14]}}"
+              confirm-hold="{{page_data_16}}"
+              cursor-spacing="{{page_data_17}}"
+              gesture="{{page_data_18}}"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>type</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_1}}"
+              range="{{page_data_2}}"
+              bindchange="page_fun_1"
+            >
+              {{page_data_2[page_data_1] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启password</text>
+          </view>
+          <switch
+            checked="{{page_data_3}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_2"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholder</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_4}}"
+              placeholder="placeholder"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholderStyle</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_5}}"
+              placeholder="placeholderStyle"
+              type="text"
+              bindinput="page_fun_4"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholderClass</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_6}}"
+              placeholder="placeholderClass"
+              type="text"
+              bindinput="page_fun_5"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_7}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_6"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>maxLength</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_8}}"
+              placeholder="maxLength"
+              type="text"
+              bindinput="page_fun_7"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启focus</text>
+          </view>
+          <switch
+            checked="{{page_data_9}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_8"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>cursor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_10}}"
+              placeholder="cursor"
+              type="text"
+              bindinput="page_fun_9"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>selectionStart</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_11}}"
+              placeholder="selectionStart"
+              type="text"
+              bindinput="page_fun_10"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>selectionEnd</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_12}}"
+              placeholder="selectionEnd"
+              type="text"
+              bindinput="page_fun_11"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启adjustPosition</text>
+          </view>
+          <switch
+            checked="{{page_data_13}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_12"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>confirmType</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_14}}"
+              range="{{page_data_15}}"
+              bindchange="page_fun_13"
+            >
+              {{page_data_15[page_data_14] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启confirmHold</text>
+          </view>
+          <switch
+            checked="{{page_data_16}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_14"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>cursorSpacing</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_17}}"
+              placeholder="cursorSpacing"
+              type="text"
+              bindinput="page_fun_15"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启gesture</text>
+          </view>
+          <switch
+            checked="{{page_data_18}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_16"
+          />
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="textarea演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <view class="_ui-textarea">
+            <textarea
+              value="{{page_data_19}}"
+              placeholder="{{page_data_20}}"
+              placeholder-style="{{page_data_21}}"
+              placeholder-class="{{page_data_22}}"
+              disabled="{{page_data_23}}"
+              maxlength="{{page_data_24}}"
+              auto-focus="{{page_data_25}}"
+              focus="{{page_data_26}}"
+              auto-height="{{page_data_27}}"
+              cursor="{{page_data_28}}"
+              selection-start="{{page_data_29}}"
+              selection-end="{{page_data_30}}"
+            >
+            </textarea>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_19}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_17"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholder</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_20}}"
+              placeholder="placeholder"
+              type="text"
+              bindinput="page_fun_18"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholderStyle</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_21}}"
+              placeholder="placeholderStyle"
+              type="text"
+              bindinput="page_fun_19"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>placeholderClass</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_22}}"
+              placeholder="placeholderClass"
+              type="text"
+              bindinput="page_fun_20"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_23}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_21"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>maxlength</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_24}}"
+              placeholder="maxlength"
+              type="text"
+              bindinput="page_fun_22"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启autoFocus</text>
+          </view>
+          <switch
+            checked="{{page_data_25}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_23"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启focus</text>
+          </view>
+          <switch
+            checked="{{page_data_26}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_24"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启autoHeight</text>
+          </view>
+          <switch
+            checked="{{page_data_27}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_25"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>cursor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_28}}"
+              placeholder="cursor"
+              type="text"
+              bindinput="page_fun_26"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>selectionStart</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_29}}"
+              placeholder="selectionStart"
+              type="text"
+              bindinput="page_fun_27"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>selectionEnd</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_30}}"
+              placeholder="selectionEnd"
+              type="text"
+              bindinput="page_fun_28"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

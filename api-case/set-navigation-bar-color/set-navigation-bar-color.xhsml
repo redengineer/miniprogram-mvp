@@ -1,0 +1,17 @@
+<view class="container">
+  <showbox title="设置导航栏颜色">
+    <box>
+      <view class="_ui-space">
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="frontColor" bindInput="handleFrontColor" />
+        </view>
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="backgroundColor" bindInput="handleBackgroundColor" />
+        </view>
+        
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="setNavigationBarColor1">设置前景颜色值</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="setNavigationBarColor3">设置动画</button>
+      </view>
+    </box>
+</view>
+<include src="templates.xhsml" />

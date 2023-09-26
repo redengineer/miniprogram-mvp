@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "授权",
+  "usingComponents": {
+    "showbox": "../../common/component/showbox/index",
+    "box": "../../common/component/container/index",
+    "api-status": "../../common/component/api-status/index"
+  }
+}

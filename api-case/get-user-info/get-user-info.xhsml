@@ -1,0 +1,16 @@
+<view class="container">
+  <showbox title="获取用户信息">
+    <box>
+      <view class="_ui-space">
+        <view class="_text_wrap">
+          用户信息：
+          {{info}}
+        </view>
+        <view>
+          <button class="_ui-button" hover-class="_ui-button-hover"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

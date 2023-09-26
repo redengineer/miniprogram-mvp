@@ -1,0 +1,44 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="setTabBarItem演示">
+    <box>
+      <api-status
+        success="{{page_data_4}}"
+        complete="{{page_data_6}}"
+        fail="{{page_data_5}}"
+        text="{{page_data_7}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="index" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="text" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="iconPath" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <view class="_ui-input">
+          <input
+            placeholder="selectedIconPath"
+            type="text"
+            bindinput="page_fun_4"
+          />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

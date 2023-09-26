@@ -1,0 +1,81 @@
+<view class="container">
+  <showbox title="普通选择器">
+    <box>
+      <view class="picker-container">
+        <view class="_ui-input">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" disabled="{{disabled}}" header-text="{{headerText}}" bindcancel="onCacnel">
+            <view>当前选择：{{array[index]}}</view>
+          </picker>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="多列选择器">
+    <box>
+      <view class="picker-container">
+        <view class="_ui-input">
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" bindcancel="onCacnel">
+            <view class="picker">当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</view>
+          </picker>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="时间选择器">
+    <box>
+      <view class="picker-container">
+        <view class="_ui-input">
+          <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" bindcancel="onCacnel">
+            <view class="picker">当前时间: {{time}}</view>
+          </picker>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+
+  <showbox title="日期选择器">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <view class="_ui-input">
+            <picker mode="date" fields="day" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" bindcancel="onCacnel">
+              <view>当前选择日期: {{date}}</view>
+            </picker>
+          </view>
+        </view>
+
+        <view>
+          <view class="_ui-input">
+            <picker mode="date" fields="month" value="{{month}}" start="2015-09" end="2017-09" bindchange="bindMonthChange" bindcancel="onCacnel">
+              <view>当前选择日期: {{month}}</view>
+            </picker>
+          </view>
+        </view>
+
+
+        <view>
+          <view class="_ui-input">
+            <picker mode="date" fields="year" value="{{year}}" start="2015" end="2017" bindchange="bindYearChange" bindcancel="onCacnel">
+              <view>当前选择日期: {{year}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="省市区选择器">
+    <box>
+      <view class="picker-container">
+        <view class="_ui-input">
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" bindcancel="onCacnel">
+            <view>当前选择省区：{{region[0]}}/{{region[1]}}/{{region[2]}}</view>
+          </picker>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

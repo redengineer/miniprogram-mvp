@@ -1,0 +1,52 @@
+button {
+  margin-bottom: 15px;
+}
+button:last-child {
+  margin-bottom: 0;
+}
+.page-section-title {
+  padding: 0;
+}
+.swiper-item {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.page-section-title {
+  margin-top: 30px;
+  position: relative;
+}
+.info {
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 15px;
+}
+.page-foot {
+  margin-top: 25px;
+}
+
+.control-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.slider-outer {
+  padding: 10px;
+}
+
+.demo-text-1 {
+  background-color: rgba(255, 36, 65);
+}
+
+.demo-text-2 {
+  background-color: rgba(255, 36, 65, 0.7);
+}
+
+.demo-text-3 {
+  background-color: rgba(255, 36, 65, 0.5);
+}

@@ -1,0 +1,159 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="slider演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <slider
+            min="{{page_data_0}}"
+            max="{{page_data_1}}"
+            step="{{page_data_2}}"
+            disabled="{{page_data_3}}"
+            value="{{page_data_4}}"
+            active-color="{{page_data_5}}"
+            background-color="{{page_data_6}}"
+            block-size="{{page_data_7}}"
+            block-color="{{page_data_8}}"
+            show-value="{{page_data_9}}"
+          >
+          </slider>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>min</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="min"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>max</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_1}}"
+              placeholder="max"
+              type="text"
+              bindinput="page_fun_1"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>step</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_2}}"
+              placeholder="step"
+              type="text"
+              bindinput="page_fun_2"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_3}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_3"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_4}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_4"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>activeColor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_5}}"
+              placeholder="activeColor"
+              type="text"
+              bindinput="page_fun_5"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>backgroundColor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_6}}"
+              placeholder="backgroundColor"
+              type="text"
+              bindinput="page_fun_6"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>blockSize</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_7}}"
+              placeholder="blockSize"
+              type="text"
+              bindinput="page_fun_7"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>blockColor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_8}}"
+              placeholder="blockColor"
+              type="text"
+              bindinput="page_fun_8"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showValue</text>
+          </view>
+          <switch
+            checked="{{page_data_9}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_9"
+          />
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

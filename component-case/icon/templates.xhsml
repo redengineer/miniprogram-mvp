@@ -1,0 +1,75 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="icon演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <icon
+            type="{{page_data_0}}"
+            size="{{page_data_1}}"
+            view-box="{{page_data_2}}"
+            color="{{page_data_3}}"
+          >
+          </icon>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>type</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="type"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>size</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_1}}"
+              placeholder="size"
+              type="text"
+              bindinput="page_fun_1"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>viewBox</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_2}}"
+              placeholder="viewBox"
+              type="text"
+              bindinput="page_fun_2"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>color</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_3}}"
+              placeholder="color"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

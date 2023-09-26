@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "手势和动画事件",
+  "usingComponents": {
+    "showbox": "../../common/component/showbox/index",
+    "box": "../../common/component/container/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "节点查询",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index"
+    }
+}

@@ -1,0 +1,131 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="picker-view演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <picker-view
+            value="{{page_data_0}}"
+            indicator-style="{{page_data_1}}"
+            indicator-class="{{page_data_2}}"
+            mask-style="{{page_data_3}}"
+            mask-class="{{page_data_4}}"
+            style="{{page_data_5}}"
+          >
+            <picker-view-column>
+              <view
+                xhs:for="{{years}}"
+                style="line-height: 50px; text-align: center; color: black"
+                >{{item}}年</view
+              >
+            </picker-view-column>
+            <picker-view-column>
+              <view
+                xhs:for="{{months}}"
+                style="line-height: 50px; text-align: center; color: black"
+                >{{item}}月</view
+              >
+            </picker-view-column>
+            <picker-view-column>
+              <block xhs:for="{{days[value[1]]}}">
+                <view
+                  style="line-height: 50px; text-align: center; color: black"
+                  >{{item}}日</view
+                >
+              </block>
+            </picker-view-column>
+            <picker-view-column>
+              <view class="icon-container"> 白天 </view>
+              <view class="icon-container"> 黑夜 </view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>indicatorStyle</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_1}}"
+              placeholder="indicatorStyle"
+              type="text"
+              bindinput="page_fun_1"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>indicatorClass</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_2}}"
+              placeholder="indicatorClass"
+              type="text"
+              bindinput="page_fun_2"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>maskStyle</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_3}}"
+              placeholder="maskStyle"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>maskClass</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_4}}"
+              placeholder="maskClass"
+              type="text"
+              bindinput="page_fun_4"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>style</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_5}}"
+              placeholder="style"
+              type="text"
+              bindinput="page_fun_5"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

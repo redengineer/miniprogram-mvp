@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "com2": "../com2/com2"
+    },
+    "styleIsolation": "apply-shared"
+  }
+  

@@ -1,0 +1,74 @@
+<view class="container">
+
+    <showbox title="movable-view区域小于movable-area">
+      <box>
+        <movable-area>
+            <movable-view x="{{x1}}" y="{{y1}}" damping="20" disabled="false" direction="all">text</movable-view>
+        </movable-area>
+        <button bindtap="move" class="_ui-button _mt8" hover-class="_ui-button-hover">点击移动到 (50px, 50px)</button>
+      </box>
+    </showbox>
+
+    <showbox title="movable-view区域大于movable-area">
+      <box>
+        <movable-area>
+            <movable-view x="{{x}}" y="{{y}}" class="bigger-area" direction="all">text</movable-view>
+        </movable-area>
+      </box>
+    </showbox>
+
+    <showbox title="只可以横向移动">
+      <box>
+        <movable-area htouchmove>
+            <movable-view x="{{x}}" y="{{y}}" direction="horizontal">text</movable-view>
+        </movable-area>
+      </box>
+    </showbox>
+
+    <showbox title="只可以纵向移动">
+      <box>
+        <movable-area vtouchmove>
+            <movable-view x="{{x}}" y="{{y}}" direction="vertical">text</movable-view>
+        </movable-area>
+      </box>
+    </showbox>
+
+    <showbox title="可超出边界">
+      <box>
+        <movable-area>
+            <movable-view x="{{x}}" y="{{y}}" direction="all" out-of-bounds>text</movable-view>
+        </movable-area>
+      </box>
+    </showbox>
+
+    <showbox title="带有惯性">
+      <box>
+        <movable-area>
+            <movable-view x="{{x}}" y="{{y}}" direction="all" inertia friction="1">text</movable-view>
+        </movable-area>
+      </box>
+    </showbox>
+
+
+    <showbox title="可放缩">
+      <box>
+        <movable-area scale-area="true">
+            <movable-view
+                x="{{x}}"
+                y="{{y}}"
+                scale
+                scale-min="0.5"
+                scale-max="4"
+                scale-value="{{scale}}"
+                direction="all"
+                animation="false"
+                bindchange="onChange"
+                bindscale="onScale">
+               text
+            </movable-view>
+        </movable-area>
+
+        <button bind:tap="scale" class="_ui-button _mt8" hover-class="_ui-button-hover" type="warn">点击放大3倍</button>
+      </box>
+    </showbox>
+</view>

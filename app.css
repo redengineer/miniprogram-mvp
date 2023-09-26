@@ -1,0 +1,20 @@
+@import "./common/global.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #333;
+}
+
+.container {
+  font-size: .14rem;
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+<view class="container">
+  <showbox title="设置TabBarStyle">
+    <box>
+      <view class="_ui-space">
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="默认文字颜色：{{'默认：' + color + '(蓝色)'}}" bindinput="handleColor" />
+        </view>
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="选中文字颜色：{{'默认：' + selectedColor + '(红色)'}}" bindinput="handleSelectColor" />
+        </view>
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="背景颜色：{{'默认：' + backgroundColor + '(绿色)'}}" bindinput="handleBackgroundColor" />
+        </view>
+        <view class="_ui-input">
+          <input class="input" type="text" placeholder="tabBar边框颜色：{{'仅black(默认)或white'}}" bindinput="handleBorderStyle" />
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="setTabBarStyle">设置</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="reBack">恢复</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

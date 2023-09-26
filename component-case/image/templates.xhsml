@@ -1,0 +1,58 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="image演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <image
+            src="{{page_data_0}}"
+            mode="{{page_data_2[page_data_1]}}"
+            lazy-load="{{page_data_3}}"
+          >
+          </image>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>src</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="src"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>mode</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_1}}"
+              range="{{page_data_2}}"
+              bindchange="page_fun_1"
+            >
+              {{page_data_2[page_data_1] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启lazyLoad</text>
+          </view>
+          <switch
+            checked="{{page_data_3}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_2"
+          />
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

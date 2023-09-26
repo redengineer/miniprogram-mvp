@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "滑块视图容器",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index"
+    }
+}

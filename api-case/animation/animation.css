@@ -1,0 +1,38 @@
+
+.card-area {
+  overflow: hidden;
+  border-radius: 8px 8px;
+}
+
+.animation-element-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 200px;
+  margin: 10px 17px;
+  border-radius: 8px 8px;
+  background-color: #fff;
+}
+
+.animation-element {
+  width: 46px;
+  height: 46px;
+  margin-top: 54px;
+  margin-left: 124px;
+  background-color: #ff2442;
+}
+
+.flexBottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.scroll {
+  height: 275px;
+}
+.animation-element2 {
+  width: 46px;
+  height: 46px;
+  background-color: #ff2442;
+}

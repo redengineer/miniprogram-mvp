@@ -1,0 +1,26 @@
+<view class="container">
+    <showbox title="通过navigator组件跳转(open-type不同)">
+      <box>
+        <view class="_ui-space">
+          <navigator url="./navigate" open-type="navigate">
+            <button class="_ui-button" hover-class="_ui-button-hover">navigate</button>
+          </navigator>
+          <navigator url="./navigate" open-type="redirect">
+            <button class="_ui-button" hover-class="_ui-button-hover">redirect</button>
+          </navigator>
+          <navigator url="/entry/component/component" open-type="switchTab">
+            <button class="_ui-button" hover-class="_ui-button-hover">switchTab</button>
+          </navigator>
+          <navigator url="/entry/component/component" open-type="reLaunch">
+            <button class="_ui-button" hover-class="_ui-button-hover">reLaunch</button>
+          </navigator>
+          <navigator open-type="navigateBack">
+            <button class="_ui-button" hover-class="_ui-button-hover">navigateBack</button>
+          </navigator>
+          <navigator open-type="exit">
+            <button class="_ui-button" hover-class="_ui-button-hover">exit</button>
+          </navigator>
+        </view>
+      </box>
+    </showbox>
+</view>

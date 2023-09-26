@@ -1,0 +1,60 @@
+<view class="container">
+  <showbox title="表单基础使用">
+    <box>
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="_ui-space">
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">姓名：</view>
+          <view class="_flex_1 _ui-input">
+            <input name="name1" placeholder="请输入姓名" />
+          </view>
+        </view>
+
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">年龄：</view>
+          <view class="_flex_1 _ui-input">
+            <input name="age" placeholder="请输入年龄" type="number"/>
+          </view>
+        </view>
+
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">性别：</view>
+          <radio-group name="radio" class="_dflex _flex_1">
+            <label style="min-width: auto;"><radio value="radio1" checked color="red" />男</label>
+            <label style="min-width: auto;"><radio value="radio2" color="red" />女</label>
+          </radio-group>
+        </view>
+
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">是否已婚：</view>
+          <switch name="switch" checked="{{switch}}" color="red"/>
+        </view>
+  
+        
+  
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">兴趣爱好：</view>
+          <checkbox-group name="checkbox">
+            <label style="min-width: auto;"><checkbox value="game" checked color="red">游戏</label>
+            <label style="min-width: auto;"><checkbox value="study" checked color="red">学习</label>
+          </checkbox-group>
+        </view>
+
+        <view class="_dflex _my8">
+          <view class="_dflex _ai_center">出生日期：</view>
+          <picker name="picker" mode="date" fields="day" value="2016-09-01" start="2015-09-01" end="2017-09-01" bindChange="pickerConfirm">
+            <view class="_ui-input">
+              点击选择日期: {{chosen}}
+            </view>
+          </picker>
+        </view>
+  
+  
+        <view class="_ui-space">
+          <button class="_ui-button" hover-class="_ui-button-hover" formType="submit">提交</button>
+        </view>
+      </view>
+      </form>
+    </box>
+  </showbox>
+</view>

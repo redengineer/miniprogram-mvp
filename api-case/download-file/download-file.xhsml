@@ -1,0 +1,36 @@
+<view class="container">
+  <showbox title="基本使用">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <text>远程文件路径</text>
+          <view class="_ui-input">
+            <input placeholder="远程文件路径" value="{{remoteFilePath}}" bindinput="handleRemoteFilePath"/>
+          </view>
+        </view>
+        <view>
+          <text>本地文件路径</text>
+          <view class="_ui-input">
+            <input placeholder="本地文件路径" value="{{filePath}}" bindinput="handleFilePath"/>
+          </view>
+        </view>
+        <view>
+          <text>文件类型</text>
+          <view class="_ui-input">
+            <input placeholder="文件类型" value="{{fileType}}" bindinput="handleFileType"/>
+          </view>
+        </view>
+        
+          <button bindtap="onDownload" class="_ui-button" hover-class="_ui-button-hover">下载文件</button>
+          <!-- <button bindtap="onAbort" class="_ui-button" hover-class="_ui-button-hover">abort</button>
+          <button bindtap="offHeadersReceived" class="_ui-button" hover-class="_ui-button-hover">offHeadersReceived</button>
+          <button bindtap="offProgressUpdate" class="_ui-button" hover-class="_ui-button-hover">offProgressUpdate</button> -->
+          <button bindtap="openDocument" class="_ui-button" hover-class="_ui-button-hover">打开文件</button>
+          <button bindtap="removeSavedFile" class="_ui-button" hover-class="_ui-button-hover">删除文件</button>
+      
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

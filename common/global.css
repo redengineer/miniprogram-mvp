@@ -1,0 +1,85 @@
+@import './styles/margins.css';
+@import './styles/components.css';
+@import './styles/reset.css';
+
+/* 定义一些全局的主题颜色 */
+:root {
+  --xhs-theme-color: red;
+}
+
+/* 定义一些常用的通用的颜色基础类 */
+
+._cred {
+  color: var(--xhs-theme-color);
+}
+
+._bcred {
+  background-color: var(--xhs-theme-color);
+  color: white;
+}
+
+/* 定义一些常用的通用的布局基础类 */
+
+._dflex {
+  display: flex;
+}
+
+
+._fd_column {
+  flex-direction: column;
+}
+
+._jc_space-around {
+  justify-content: space-around;
+}
+
+._jc_center {
+  justify-content: center;
+}
+
+._jc_space-between {
+  justify-content: space-between;
+}
+
+._ai_center {
+  align-items: center;
+}
+
+._flex_1 {
+  flex: 1;
+}
+
+/* 其他 */
+
+._text_wrap {
+  word-break: break-all;
+}
+
+/* input {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  height: 40px !important;
+} */
+
+._end_split {
+  position: relative;
+  border: 0;
+}
+
+._end_split::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background: #ebebeb;
+  left: 0;
+  right: 0;
+}
+
+._ui-space > * {
+  margin-bottom: 20px;
+}
+
+._ui-space > *:last-child  {
+  margin-bottom: 0;
+}

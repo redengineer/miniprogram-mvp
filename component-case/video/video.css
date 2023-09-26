@@ -1,0 +1,34 @@
+
+
+.video-action button {
+  margin: 10px;
+  flex: 1;
+}
+
+.video-action > view {
+  display: flex;
+}
+
+
+.video-show {
+  padding: 10px;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.myVideo {
+  border-radius: 12px !important;
+}
+
+.video-show video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+._ui-button-transparent {
+  background-color: white;
+  border: 1px solid #ff2442;
+  color: rgba(255, 36, 66, 1);
+}

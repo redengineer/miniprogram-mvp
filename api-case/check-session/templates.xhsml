@@ -1,0 +1,24 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="checkSession演示">
+    <box>
+      <api-status
+        success="{{page_data_0}}"
+        complete="{{page_data_2}}"
+        fail="{{page_data_1}}"
+        text="{{page_data_3}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

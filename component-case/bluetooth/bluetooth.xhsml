@@ -1,0 +1,3 @@
+<view>
+  <button type="primary" bindtap="openBluetoothAdapter">openBluetoothAdapter</button>
+</view>

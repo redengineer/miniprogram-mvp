@@ -1,0 +1,5 @@
+<view class="container _ui-space">
+  <view>组件内部的value值: {{value}}</view>
+  <view>监听组件value值的变化: {{value2}}</view>
+  <button bindtap="onClick" class="_ui-button" hover-class="_ui-button-hover">组件内重置value值</button>
+</view>

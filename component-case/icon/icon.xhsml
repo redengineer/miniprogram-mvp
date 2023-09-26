@@ -1,0 +1,25 @@
+<view class="container">
+  <showbox title="标志性图标">
+    <view class="icon-container">
+      <view class="icon-box" xhs:for="{{iconList}}">
+        <icon class="icon-box-img" type="{{item.type}}" size="20"></icon>
+        <view class="icon-box-text">
+          {{item.text ?? item.type}}
+        </view>
+      </view>
+    </view>
+  </showbox>
+
+  <showbox title="自定义icon的大小">
+    <view class="icon-container">
+      <view class="icon-box" xhs:for="{{iconSize}}">
+        <icon class="icon-box-img" type="success" size="{{item}}"></icon>
+        <view class="icon-box-text">
+          {{item + 'px'}}
+        </view>
+      </view>
+    </view>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

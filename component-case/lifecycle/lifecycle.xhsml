@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view>
+        <text>load:{{load}}</text>
+      </view>
+      <view>
+        <text>show:{{show}}</text>
+      </view>
+      <view>
+        <text>hide:{{hide}}</text>
+      </view>
+      <view>
+        <text>unload:{{unload}}</text>
+      </view>
+    </view>
+  </view>
+</view>

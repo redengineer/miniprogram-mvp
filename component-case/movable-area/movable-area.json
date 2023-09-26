@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "可移动视图区域",
+  "usingComponents": {
+    "showbox": "../../common/component/showbox/index",
+    "box": "../../common/component/container/index"
+}
+}

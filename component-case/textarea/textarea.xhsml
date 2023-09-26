@@ -1,0 +1,129 @@
+<view class="container">
+  <view class="page-body">
+    <showbox title="默认">
+      <box>
+        <view class="page-section">
+          <view class="page-section-title">这是一个自动聚焦的textarea</view>
+          <view class="textarea-wrp">
+            <textarea
+              class="haha"
+              value="{{value}}"
+              placeholder="{{placeholder}}"
+              placeholder-style="{{placeholderStyle}}"
+              placeholder-class="{{placeholderClass}}"
+              disabled="{{disabled}}"
+              maxlength="{{maxlength}}"
+              focus="{{focus}}"
+              auto-focus="true"
+              auto-height="{{autoHeight}}"
+              cursor="{{cursor}}"
+              selection-start="{{selectionStart}}"
+              selection-end="{{selectionEnd}}"
+              bindfocus="bindTextAreaFocus"
+              bindblur="bindTextAreaBlur"
+              bindinput="bindTextAreaInput"
+              bindchange="onChange"
+              bindconfirm="bindconfirm"
+            />
+          </view>
+        </view>
+      </box>
+    </showbox>
+
+    <showbox title="默认">
+      <box>
+        <view class="page-section" style="margin-top: 20px;margin-bottom: 120px;">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">focusTime: {{focusTime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">blurTime: {{blurTime}}</view>
+            </view>
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">inputValue: {{inputValue}}</view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">值 <text class="filed-tip">(value)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" value="{{value}}" bindinput="changeValue" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">输入框为空时占位符 <text class="filed-tip">(placeholder)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" value="{{placeholder}}" bindinput="changePlaceholder" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">指定 placeholder 的样式 <text class="filed-tip">(placeholder-style)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" value="{{placeholderStyle}}" bindinput="changePlaceholderStyle" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">指定 placeholder 的样式类 <text class="filed-tip">(placeholder-class)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" value="{{placeholderClass}}" bindinput="changePlaceholderClass" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">是否禁用 <text class="filed-tip">(disabled)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <switch checked="{{disabled}}" bindchange="changeDisabled" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">最大输入长度 <text class="filed-tip">(maxlength)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" type="number"  value="{{maxlength}}" bindinput="changeMaxlength" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">聚焦<text class="filed-tip">(focus)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <switch checked="{{focus}}" bindchange="changeFocus" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">是否自动增高 <text class="filed-tip">(autoHeight)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <switch checked="{{autoHeight}}"  bindchange="changeAutoHeight" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">指定focus时的光标位置<text class="filed-tip">(cursor)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" type="number"  value="{{cursor}}" bindinput="changeCursor" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">光标起始位置 <text class="filed-tip">(selection-start)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" type="number" value="{{selectionStart}}" bindinput="changeSelectionStart" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">光标结束位置  <text class="filed-tip">(selection-end)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" type="number" value="{{selectionEnd}}" bindinput="changeSelectionEnd" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </box>
+    </showbox>
+
+  </view>
+</view>

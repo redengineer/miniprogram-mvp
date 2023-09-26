@@ -1,0 +1,73 @@
+<view class="container">
+  <showbox title="基础展示">
+    <box>
+      <view class="_ui-space">
+        <view >
+          <text>{{spaceText}}</text>
+        </view>
+  
+        <view >
+          <text style="color: #ff2442;">{{spaceText}}</text>
+        </view>
+  
+        <view >
+          <text style="font-weight: bold;">{{spaceText}}</text>
+        </view>
+  
+        <view>
+          <text style="font-style: italic;">{{spaceText}}</text>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="文本可选">
+    <box>
+      <view class="_ui-space">
+        <view >
+          <text user-select>{{spaceText}}</text>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="显示连续空格">
+    <box>
+      <view class="_ui-space">
+        <view >
+          <text space="emsp">小红书    小程序    官方demo</text>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="转义文本">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <text decode>{{decodeText}}</text>
+        </view>
+        <view>
+          <text>{{decodeText}}</text>
+        </view>
+      </view>
+    </box>
+  </showbox>
+  
+
+  <!-- <showbox title="转义">
+    <box pad="10px" class="text-box">
+      <view >
+        <text>默认转义：&nbsp;&ensp;&emsp;&quot;&apos;&amp;&lt;&gt;\n</text>
+      </view>
+      <view >
+        <text> =============== \n</text>
+      </view>
+      <view >
+        <text>不转义 data 里的： {{decodeText}} \n</text>
+      </view>
+    </box>
+  </showbox> -->
+</view>
+
+<include src="templates.xhsml" />

@@ -1,0 +1,11 @@
+<view class="container">
+  <showbox title="检验登陆状态">
+    <box>
+      <view class="_ui-space">
+        <view>当前登陆状态：{{isAccess}}</view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="checkSession">检查登录状态</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

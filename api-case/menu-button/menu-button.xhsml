@@ -1,0 +1,11 @@
+<view class="container">
+  <showbox title="获取菜单按钮布局信息">
+    <box>
+      <view>
+        <view class="_text_wrap _mb8">结果：{{content}}</view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getMenuButtonBoundingClientRect">点击获取</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

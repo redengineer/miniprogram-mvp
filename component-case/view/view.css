@@ -1,0 +1,59 @@
+.flex-container-x {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-y {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100px;
+  color: white;
+}
+
+.flex-container-y .flex-item {
+  width: 100px;
+  height: 80px;
+}
+
+.demo-1 {
+  background-color: rgb(255, 36, 65);
+}
+
+.demo-2 {
+  background-color: rgba(255, 36, 65, 0.7);
+}
+
+.demo-3 {
+  background-color: rgba(255, 36, 65, 0.5);
+}
+
+
+
+
+
+.flex-item-V{
+  margin: 0 auto;
+  width: 150px;
+  height: 100px;
+}
+.new-hover-class{
+  background: red;
+}
+.outer {
+  background:green;
+}
+.middle {
+  background:gray;
+}
+.inner {
+  background:yellow;
+}
+

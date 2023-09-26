@@ -1,0 +1,14 @@
+<view class="container">
+  <showbox title="arrayBufferToBase64">
+    <box>
+      <view>
+        <view>结果：{{content}}</view>
+        <input class="input" placeholder="base64String" type="text" bindinput="handleInput"></input>
+        <view class="_dflex _fd_column">
+          <button bindtap="handleBase64ToArrayBuffer">base64ToArrayBuffer</button>
+          <button bindtap="handleArrayBufferToBase64">arrayBufferToBase64</button>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

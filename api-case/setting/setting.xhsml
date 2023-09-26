@@ -1,0 +1,57 @@
+<view class="container">
+
+  <showbox title="用户信息授权">
+    <box>
+      <view class="setting-title">
+        点击下方按钮进行授权
+      </view>
+      <button data-scope="scope.userInfo" class="_ui-button" hover-class="_ui-button-hover" bindtap="handleAuthorize">授权</button>
+    </box>
+  </showbox>
+
+  <showbox title="手机号授权">
+    <box>
+      <view class="setting-title">
+        点击下方按钮进行授权
+      </view>
+      <button open-type="getPhoneNumber" class="_ui-button" hover-class="_ui-button-hover" bindgetphonenumber="getPhoneNumber">授权</button>
+    </box>
+  </showbox>
+
+  <showbox title="地理位置授权">
+    <box>
+      <view class="setting-title">
+        点击下方按钮进行授权
+      </view>
+      <button data-scope="scope.userLocation" class="_ui-button" hover-class="_ui-button-hover" bindtap="handleAuthorize">授权</button>
+    </box>
+  </showbox>
+
+  <showbox title="保存相册授权">
+    <box>
+      <view class="setting-title">
+        点击下方按钮进行授权
+      </view>
+      <button data-scope="scope.writePhotosAlbum" class="_ui-button" hover-class="_ui-button-hover" bindtap="handleAuthorize">授权</button>
+    </box>
+  </showbox>
+
+  <showbox title="摄像头授权">
+    <box>
+      <view class="setting-title">
+        点击下方按钮进行授权
+      </view>
+      <button data-scope="scope.camera" class="_ui-button" hover-class="_ui-button-hover" bindtap="handleAuthorize">授权</button>
+    </box>
+  </showbox>
+
+  <showbox title="小红书权限设置">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getSetting">获取小程序设置</button>
+        <button bindtap="openSetting" class="_ui-button" hover-class="_ui-button-hover">打开小程序设置</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

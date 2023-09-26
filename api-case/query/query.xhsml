@@ -1,0 +1,58 @@
+<view class="container">
+
+  <showbox title="基础使用">
+    <box>
+      <view class="_ui-space">
+        <view class="_text_wrap">结果：{{content}}</view>
+
+        <view class="flex-container-x">
+          <view id="box" class="flex-item demo-1">A</view>
+        </view>
+
+        <button 
+          class="_ui-button" 
+          hover-class="_ui-button-hover" 
+          bindtap="handleGetQuery"
+        >
+          点击获取节点信息
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="选择多个节点">
+    <box pad="10px">
+      <view class="_ui-space">
+        <view class="_text_wrap">结果：{{content2}}</view>
+
+        <view class="flex-container-x">
+          <view class="box flex-item demo-1">A</view>
+          <view class="box flex-item demo-2">B</view>
+        </view>
+
+        <button 
+          class="_ui-button" 
+          hover-class="_ui-button-hover" 
+          bindtap="handleGetQueryAll"
+        >
+          点击获取所有节点信息
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="获得显示区域尺寸">
+    <box>
+      <view class="_ui-space">
+        <view class="_text_wrap">结果：{{content3}}</view>
+        <button 
+          class="_ui-button" 
+          hover-class="_ui-button-hover" 
+          bindtap="selectViewport"
+        >
+          点击获取
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

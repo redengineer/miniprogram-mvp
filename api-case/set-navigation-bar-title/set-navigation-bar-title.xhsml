@@ -1,0 +1,13 @@
+<view class="container">
+  <showbox title="设置页面标题">
+    <box>
+      <view class="_ui-space">
+        <view class="_ui-input">
+          <input  bindinput="handleTitle" type="text" placeholder="请输入页面标题并点击设置即可" name="title"></input>
+        </view>
+        <button class="_ui-button" hover-class="_ui-button-hover" type="primary" bindtap="setNaivgationBarTitle">设置</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

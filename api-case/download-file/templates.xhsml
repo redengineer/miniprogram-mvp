@@ -1,0 +1,94 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="downloadFile演示">
+    <box>
+      <api-status
+        success="{{page_data_4}}"
+        complete="{{page_data_6}}"
+        fail="{{page_data_5}}"
+        text="{{page_data_7}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="header" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="timeout" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="filePath" type="text" bindinput="page_fun_4" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="openDocument演示">
+    <box>
+      <api-status
+        success="{{page_data_10}}"
+        complete="{{page_data_12}}"
+        fail="{{page_data_11}}"
+        text="{{page_data_13}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="filePath" type="text" bindinput="page_fun_6" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="fileType" type="text" bindinput="page_fun_7" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_5"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="removeSavedFile演示">
+    <box>
+      <api-status
+        success="{{page_data_15}}"
+        complete="{{page_data_17}}"
+        fail="{{page_data_16}}"
+        text="{{page_data_18}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="filePath" type="text" bindinput="page_fun_9" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_8"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

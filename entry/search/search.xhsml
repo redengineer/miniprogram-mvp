@@ -1,0 +1,113 @@
+<view class="search-container">
+    <!-- 搜索框 -->
+    <view class="search">
+        <view class="search-box">
+            <view class="search-icon">
+                <image src="../../image/search_1.5.png"></image>
+            </view>
+            <input class="search-input"
+                style="max-width:70%;"
+                type="text"
+                focus="{{focus}}"
+                placeholder="搜索组件或能力"
+                model:value="{{value}}"
+                placeholder-class="searchholder"
+                bindfocus="searchFocus"
+                bindinput="searchInput"
+                bindconfirm="searchConfirm"
+                confirm-type="search"
+                bindblur="searchBlur"
+            />
+            <button xhs:if="{{value}}" class="search-input-clear" bindtap="searchClear"></button>
+        </view>
+        <view class="search-button">
+            <view class="{{value ? 'search-deep' : 'search-sear'}}" bindtap="searchConfirm">搜索</view>
+        </view>
+    </view>
+
+    <view class="search-tag" xhs:if="{{hasResult}}">
+        <view data-tag="all" class="{{tag === 'all' ? 'search-tag-select' : ''}}" bindtap="setTag">
+            全部
+        </view>
+        <view data-tag="components" class="{{tag === 'components' ? 'search-tag-select' : ''}}" bindtap="setTag">
+            组件
+        </view>
+        <view data-tag="apis" class="{{tag === 'apis' ? 'search-tag-select' : ''}}" bindtap="setTag">
+            能力
+        </view>
+    </view>
+
+    <!-- 输入框占位 -->
+    <!-- <view style="height:0.52rem;"></view> -->
+
+    <!-- <view xhs:if="{{!hasResult && !showEmptyResult}}">
+        <view xhs:if="{{hasHistory}}" class="search-his">
+            <view class="his-title">
+                <view>历史</view>
+                <view class="his-icon" bindtap="historyClear"></view>
+            </view>
+            <view class="his-content">
+                <view class="his-item" xhs:for-items="{{history}}" xhs:key="*item" bindtap="openSearch" data-word="{{item}}">{{item}}</view>
+            </view>
+        </view>
+        <view class="search-hot">
+            <view class="hot-title">热门</view>
+            <view class="hot-content">
+                <view class="hot-item" xhs:for-items="{{hot}}" bindtap="openPage" data-item="{{item}}" data-prepath="swan-api">{{item.subName}}</view>
+            </view>
+        </view>
+    </view> -->
+
+    <!-- 搜索结果 -->
+   
+    <view xhs:if="{{hasResult}}" class="search-result">
+        <scroll-view style="height: 100%;" scroll-y show-scrollbar="{{false}}" scroll-with-animation scroll-into-view="{{scrollInto}}" bindscroll="handleScroll">
+            <!-- <showbox title="组件" xhs:if="{{component.length && (tag === 'all' || tag === 'components')}}"> -->
+
+            <view id="components" style="overflow: hidden;" xhs:if="{{component.length}}">
+                <showbox title="组件" >
+                    <box pt="0" pb="0">
+                      <view class="result-list" xhs:for-items="{{component}}" data-item="{{item}}" data-prepath="component-case" bindtap="openPage">
+                          <view>{{item.subName}}</view>
+                          <view class="result-up"></view>
+                      </view>
+                    </box>
+                  </showbox>
+               </view>
+        
+                <!-- <showbox title="能力演示" xhs:if="{{api.length && (tag === 'all' || tag === 'apis')}}"> -->
+                <view id="apis" xhs:if="{{api.length}}">
+                    <showbox title="能力演示">
+                        <box pt="0" pb="0">
+                          <view class="result-list" xhs:for-items="{{api}}" data-item="{{item}}" data-prepath="api-case" bindtap="openPage">
+                              <view>{{item.subName}}</view>
+                              <view class="result-up"></view>
+                          </view>
+                        </box>
+                      </showbox>
+                </view>
+           <view style="height: calc(100% - {{apiHeight + comHeight}}px + {{apiHeight}}px);"></view>
+    
+            <!-- <view xhs:if="{{ api.length || fragment.length }}" class="api">
+                <view class="result-title border-bottom">接口</view>
+                <view>
+                    
+                </view>
+            </view>
+            <view xhs:if="{{extensions.length}}" class="extensions">
+                <view class="result-title border-bottom">扩展能力</view>
+                <view>
+                    <view class="result-list border-bottom" xhs:for-items="{{extensions}}" data-item="{{item}}" data-prepath="extensions" bindtap="openPage">
+                        <view>{{item.subName}}</view>
+                        <view class="result-up"></view>
+                    </view>
+                </view>
+            </view> -->
+            </scroll-view>
+    </view>
+
+    <!-- 搜索无结果 -->
+    <view  xhs:if="{{!hasResult && showEmptyResult}}" class="empty-icon">
+        <image src="../../image/nosearch.png" mode="widthFix"></image>
+    </view>
+</view>

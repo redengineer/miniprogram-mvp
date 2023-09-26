@@ -1,0 +1,16 @@
+<view class="container">
+  <showbox title="打电话">
+    <box>
+      <view class="page-section">
+        <view class="desc">请在下方输入电话号码：</view>
+        <view class="_ui-input _my8">
+          <input type="number" name="input" bindinput="bindInput" />
+        </view>
+        <view>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="makePhoneCall">拨打</button>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

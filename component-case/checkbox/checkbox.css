@@ -1,0 +1,32 @@
+._dflex > * {
+  font-size: 14px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.select-base {
+  display: flex;
+}
+
+
+.select-base > view {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.select-suppose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-base-large  radio {
+  transform: scale(1.15);
+}
+
+.select-base-small  radio {
+  transform: scale(0.8);
+}

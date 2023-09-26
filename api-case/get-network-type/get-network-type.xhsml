@@ -1,0 +1,11 @@
+<view class="container">
+  <showbox title="获取手机网络状态">
+    <box>
+      <view class="_ui-space">
+        <view class="_my8">网络状态：{{networkType}}</view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getNetworkType">获取手机网络状态</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

@@ -1,0 +1,78 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="share演示">
+    <box>
+      <api-status
+        success="{{page_data_3}}"
+        complete="{{page_data_5}}"
+        fail="{{page_data_4}}"
+        text="{{page_data_6}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="title" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="path" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="imageUrl" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="showShareMenu演示">
+    <box>
+      <api-status
+        success="{{page_data_7}}"
+        complete="{{page_data_9}}"
+        fail="{{page_data_8}}"
+        text="{{page_data_10}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_4"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="hideShareMenu演示">
+    <box>
+      <api-status
+        success="{{page_data_11}}"
+        complete="{{page_data_13}}"
+        fail="{{page_data_12}}"
+        text="{{page_data_14}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_5"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

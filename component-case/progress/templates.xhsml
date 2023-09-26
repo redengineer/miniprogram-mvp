@@ -1,0 +1,173 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="progress演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <progress
+            percent="{{page_data_0}}"
+            show-info="{{page_data_1}}"
+            border-radius="{{page_data_2}}"
+            font-size="{{page_data_3}}"
+            stroke-width="{{page_data_4}}"
+            color="{{page_data_5}}"
+            active-color="{{page_data_6}}"
+            background-color="{{page_data_7}}"
+            active="{{page_data_8}}"
+            active-mode="{{page_data_9}}"
+            duration="{{page_data_10}}"
+          ></progress>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>percent</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="percent"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showInfo</text>
+          </view>
+          <switch
+            checked="{{page_data_1}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_1"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>borderRadius</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_2}}"
+              placeholder="borderRadius"
+              type="text"
+              bindinput="page_fun_2"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>fontSize</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_3}}"
+              placeholder="fontSize"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>strokeWidth</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_4}}"
+              placeholder="strokeWidth"
+              type="text"
+              bindinput="page_fun_4"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>color</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_5}}"
+              placeholder="color"
+              type="text"
+              bindinput="page_fun_5"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>activeColor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_6}}"
+              placeholder="activeColor"
+              type="text"
+              bindinput="page_fun_6"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>backgroundColor</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_7}}"
+              placeholder="backgroundColor"
+              type="text"
+              bindinput="page_fun_7"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启active</text>
+          </view>
+          <switch
+            checked="{{page_data_8}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_8"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>activeMode</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_9}}"
+              placeholder="activeMode"
+              type="text"
+              bindinput="page_fun_9"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>duration</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_10}}"
+              placeholder="duration"
+              type="text"
+              bindinput="page_fun_10"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

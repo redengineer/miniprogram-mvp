@@ -1,0 +1,7 @@
+<view class="com2-container">
+    <view style="text-align: center;">这是子组件</view>
+    <view style="text-align: center;">{{message}}</view>
+    <view class="_ui-space _px10 _pt10">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="onTap">通过事件给父组件发消息</button>
+    </view>
+</view>

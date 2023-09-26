@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "小程序示例",
+    "backgroundColor": "#EFF1F2",
+    "navigationStyle": "custom",
+    "usingComponents": {
+    }
+}

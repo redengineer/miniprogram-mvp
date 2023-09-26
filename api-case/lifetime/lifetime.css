@@ -1,0 +1,16 @@
+.lifetime-message {
+  max-height: 400px;
+}
+
+.lifetime-message .lifetime-message-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lifetime-message .lifetime-message-item text {
+  padding: 0 10px;
+  border-radius: 100px;
+  background-color: red;
+  color: white;
+}

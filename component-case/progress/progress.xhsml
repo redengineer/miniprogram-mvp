@@ -1,0 +1,40 @@
+<view class="container">
+  <showbox title="基础使用">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <progress percent="20" active stroke-width="3" active-color="red"/>
+        </view>
+        <view>
+          <progress percent="40" active stroke-width="3" active-color="red"/>
+        </view>
+        <view>
+          <progress percent="60" active stroke-width="3" active-color="red"/>
+        </view>
+
+        <view>
+          <progress percent="80"  active stroke-width="3" active-color="red"/>
+        </view>
+      </view>
+    </box>
+  </showbox>
+  
+  <showbox title="显示进度">
+    <box>
+      <view style="height: 20px; overflow: hidden;display: flex;align-items: center;">
+        <progress percent="20" show-info stroke-width="3" active-color="red"/>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="显示图标">
+    <box>
+      <view class="progress-box">
+        <progress percent="40" active stroke-width="3" active-color="red"/>
+        <icon class="progress-cancel" type="cancel"></icon>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

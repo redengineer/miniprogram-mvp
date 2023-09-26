@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "webview内js-sdk相关api",
+  "usingComponents": {
+      "showbox": "../../common/component/showbox/index",
+      "box": "../../common/component/container/index"
+  }
+}

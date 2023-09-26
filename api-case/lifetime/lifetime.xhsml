@@ -1,0 +1,36 @@
+<view class="container">
+  <showbox title="小程序页面生命周期消息">
+    <box>
+      <scroll-view  scroll-y scroll-top="{{scrollTop}}">
+        <view class="lifetime-message _ui-space">
+          <view class="lifetime-message-item" xhs:for="{{message}}">
+            <view style="text-align: center;">
+              <text xhs:if="{{item.count > 1}}">{{item.count}}次</text>
+              触发了{{item.lifeName}}事件
+            </view>
+            <image style="width: 16px; height: 16px;" src="../../../image/test_success.png"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </box>
+  </showbox>
+
+  <showbox title="下拉刷新事件">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="startPullDownRefresh">点击下拉</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="stopPullDownRefresh">停止刷新</button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="页面滚动事件">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="generateBox">扩充高度</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="notGenerateBox">取消扩充高度</button>
+      </view>
+      <view style="height: {{height}}; transition: all 0.3s;"></view>
+    </box>
+  </showbox>
+</view>

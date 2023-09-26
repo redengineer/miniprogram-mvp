@@ -1,0 +1,17 @@
+<import src="../../common/template.xhsml" />
+
+<view class="container">
+  <showbox title="template与组件内外通信">
+    <box pad="10px">
+      <view class="_ui-space">
+        <example id="child" value="{{value}}" bindmyevent="onMyevent"></example>
+        <template is="template" data="{{ value: value }}"></template>
+        <view class="_ui-input">
+          <input placeholder="输入修改的value" placeholder-style="color: #3333334D;" bindinput="onInput"/>
+        </view>
+        <button class="_ui-button" bindtap="onClick" hover-class="_ui-button-hover">点击修改value</button>
+        <button class="_ui-button" bindtap="onClick2" hover-class="_ui-button-hover">组件外重置value</button>
+      </view>
+    </box>
+  </showbox>
+</view>

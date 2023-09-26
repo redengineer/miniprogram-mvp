@@ -1,0 +1,31 @@
+<view class="container">
+  <showbox title="基础使用">
+    <box>
+      <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast1Tap">点击弹出默认toast(无ICON，无Image)</button>
+    </box>
+  </showbox>
+  <showbox title="设置延迟时间">
+    <box>
+      <view class="_ui-input _mb8">
+        <input type="text" placeholder="设置duration(以毫秒为单位)" bindinput="handleDuration" />
+      </view>
+      <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast2Tap">点击弹出设置duration的toast</button>
+    </box>
+  </showbox>
+  <showbox title="其他类型">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast3Tap">点击弹出显示icon的toast</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast4Tap">点击弹出显示image的toast</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast5Tap">点击弹出显示mask的toast</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="toast7Tap">点击title显示表情</button>
+      </view>
+    </box>
+  </showbox>
+  <showbox title="隐藏">
+    <box>
+      <button class="_ui-button" hover-class="_ui-button-hover" bindtap="hideToast">点击隐藏toast</button>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

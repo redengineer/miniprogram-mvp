@@ -1,0 +1,51 @@
+.wrap {
+  padding-top: 30rpx;
+}
+
+.scroll-view {
+  height: 400rpx;
+  background: #fff;
+}
+
+.scroll-area {
+  height: 1900rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s;
+}
+
+.notice {
+  margin-top: 150rpx;
+}
+
+.ball {
+  width: 100rpx;
+  height: 100rpx;
+  background: #38f;
+  border-radius: 50%;
+}
+
+.ball2 {
+  width: 100rpx;
+  height: 100rpx;
+  background: #38f;
+  border-radius: 50%;
+  margin-top: 500rpx;
+}
+
+.filling {
+  height: 400rpx;
+}
+
+.message {
+  margin: 50rpx 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.message text {
+  font-size: 40rpx;
+  font-family: -apple-system-font, Helvetica Neue,Helvetica,sans-serif;
+}

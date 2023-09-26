@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "隐藏返回首页按钮",
+  "usingComponents": {
+      "showbox": "../../common/component/showbox/index",
+      "box": "../../common/component/container/index"
+  }
+}

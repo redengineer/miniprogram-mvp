@@ -1,0 +1,55 @@
+
+.radio-group-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.button_bg_red {
+  background-color: red;
+}
+
+.button_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_group button {
+  margin: 10px 0;
+}
+
+.mini_button_group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button_disabled {
+  height: 40px;
+  border-radius: 1000px;
+  background-color: rgba(255, 36, 66, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  line-height: 40px;
+}
+
+._ui-button-transparent {
+  background-color: white;
+  border: 1px solid #ff2442;
+  color: rgba(255, 36, 66, 1);
+}
+
+._ui-button-transparent-disabled {
+  background-color: white;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+._ui-button-gray {
+  background-color: rgba(51, 51, 51, 0.05);
+  color: black;
+}
+._ui-button-transparent-gray {
+  background-color: white;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  color: black;
+}

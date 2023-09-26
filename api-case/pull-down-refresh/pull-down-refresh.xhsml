@@ -1,0 +1,12 @@
+<view class="container">
+  <showbox title="下拉刷新">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="startPullDownRefresh">点击下拉</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="stopPullDownRefresh">停止刷新</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

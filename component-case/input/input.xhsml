@@ -1,0 +1,18 @@
+<view class="container">
+  <showbox title="单行输入">
+    <box>
+      <view class="_ui-input">
+        <input placeholder="占位文字" placeholder-style="color: #3333334D;"/>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="多行输入">
+    <box>
+      <view class="_ui-textarea">
+        <textarea placeholder="占位文字" placeholder-style="color: #3333334D;"/>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

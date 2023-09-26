@@ -1,0 +1,57 @@
+<view class="container">
+  <showbox title="选择位置">
+    <box>
+      <view class="_ui-space">
+      <view>名称：{{choosedLocation.name}}</view>
+      <view>地址：{{choosedLocation.address}}</view>
+      <view>经度：{{choosedLocation.latitude}}</view>
+      <view>纬度：{{choosedLocation.longitude}}</view>
+      <!-- <view class="_ui-input _my8">
+        <input type="text" value="{{latitude}}" bindinput="handleLatitude" />
+      </view>
+      <view class="_ui-input _mb8">
+        <input type="text" value="{{longitude}}" bindinput="handleLongitude" />
+      </view> -->
+      
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="chooseLocation">选择位置</button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="获取当前位置">
+    <box>
+      <view class="_ui-space">
+      <view>纬度：{{getLoaction.latitude}}</view>
+      <view>经度：{{getLoaction.longitude}}</view>
+      <view>速度：{{getLoaction.speed}}</view>
+      <view>位置的精确度：{{getLoaction.accuracy}}</view>
+
+      <view>高度：{{getLoaction.altitude}}</view>
+      <view>垂直精度：{{getLoaction.verticalAccuracy}}</view>
+      <view>水平精度：{{getLoaction.horizontalAccuracy}}</view>
+      
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getLocation">获取当前位置</button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="使用内置地图">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="openLocation">使用内置地图查看</button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="实时获取位置">
+    <box>
+      <view class="_ui-space">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="startLocationUpdate">开启接受位置消息</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="stopLocationUpdate">关闭接受位置消息</button>
+        <!-- <button class="_ui-button" hover-class="_ui-button-hover" bindtap="onLocationChange">绑定监控位置事件</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="offLocationChange">取消监控位置事件</button> -->
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

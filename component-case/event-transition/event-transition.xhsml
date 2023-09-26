@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="page-body">
+      <view
+        class="width-transition"
+        bindtransitionstart="onTransitionStart"
+        bindtransitionend="onTransitionEnd"
+      >
+        view
+      </view>
+
+      <view class="btn-area">
+        <button
+          class="width-transition"
+          bindtransitionstart="onTransitionStart"
+          bindtransitionend="onTransitionEnd"
+        >
+          button
+        </button>
+      </view>
+
+      <view>
+        icon
+        <icon
+          type="success"
+          class="width-transition"
+          bindtransitionstart="onTransitionStart"
+          bindtransitionend="onTransitionEnd"
+        >
+        </icon>
+      </view>
+
+      <view>
+        image
+
+        <image
+          src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+          class="width-transition"
+          bindtransitionstart="onTransitionStart"
+          bindtransitionend="onTransitionEnd"
+        >
+        </image>
+      </view>
+
+      <view>
+        <text
+          class="width-transition"
+          bindtransitionstart="onTransitionStart"
+          bindtransitionend="onTransitionEnd"
+        >
+          text
+        </text>
+      </view>
+
+      <view>
+        <label
+          class="width-transition"
+          bindtransitionstart="onTransitionStart"
+          bindtransitionend="onTransitionEnd"
+        >
+          label
+        </label>
+      </view>
+
+  </view>
+</view>

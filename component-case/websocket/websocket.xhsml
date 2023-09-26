@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="page-body">
+    <button bindtap="onConnect">connect</button>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="container">
+  <showbox title="通过HTML文本渲染">
+    <box pad="10px">
+      <rich-text nodes="{{rt1}}"></rich-text>
+    </box>
+  </showbox>
+
+  <showbox title="通过节点渲染">
+    <box pad="10px">
+      <scroll-view scroll-x style="width: auto;">
+        <view>
+          {{nodeSnip}}
+        </view>
+      </scroll-view>
+      <view>渲染效果：</view>
+      <rich-text nodes="{{nodes}}" style="overflow: hidden;"></rich-text>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

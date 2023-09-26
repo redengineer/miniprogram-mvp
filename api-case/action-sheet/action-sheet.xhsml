@@ -1,0 +1,23 @@
+<view class="container">
+    <showbox title="操作菜单">
+      <box>
+        <view class="_ui-space">
+          <view class="_ui-input">
+            <input type="text" placeholder="警示文案"  bindinput="handleAlertText" />
+          </view>
+          <view class="_ui-input">
+            <input type="text" placeholder="itemColor: #ff0000" bindinput="handleItemColor" />
+          </view>
+          <view class="_ui-input">
+            <input type="text" placeholder="itemList长度" bindinput="handleItemListLength" />
+          </view>
+          
+          
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="actionSheetTap">弹出action sheet</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="actionSheetTapAlertText">警示文案</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="actionSheetTapColor">Color</button>
+        </view>
+      </box>
+    </showbox>
+</view>
+<include src="templates.xhsml" />

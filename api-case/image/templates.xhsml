@@ -1,0 +1,120 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="chooseImage演示">
+    <box>
+      <api-status
+        success="{{page_data_3}}"
+        complete="{{page_data_5}}"
+        fail="{{page_data_4}}"
+        text="{{page_data_6}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="count" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="sizeType" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="sourceType" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="previewImage演示">
+    <box>
+      <api-status
+        success="{{page_data_10}}"
+        complete="{{page_data_12}}"
+        fail="{{page_data_11}}"
+        text="{{page_data_13}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="urls" type="text" bindinput="page_fun_5" />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <text class="_dflex _ai_center _px8">是否开启showmenu</text>
+          <switch color="rgba(255, 36, 66, 1)" bindchange="page_fun_6" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="current" type="text" bindinput="page_fun_7" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_4"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="saveImageToPhotosAlbum演示">
+    <box>
+      <api-status
+        success="{{page_data_15}}"
+        complete="{{page_data_17}}"
+        fail="{{page_data_16}}"
+        text="{{page_data_18}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="filePath" type="text" bindinput="page_fun_9" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_8"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="getImageInfo演示">
+    <box>
+      <api-status
+        success="{{page_data_20}}"
+        complete="{{page_data_22}}"
+        fail="{{page_data_21}}"
+        text="{{page_data_23}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="src" type="text" bindinput="page_fun_11" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_10"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

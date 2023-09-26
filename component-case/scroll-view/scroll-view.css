@@ -1,0 +1,93 @@
+.scroll-view {
+  height: 1.66rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.color-a,
+.color-b,
+.color-c {
+  height: 1.66rem;
+  line-height: .16rem;
+  text-align: center;
+  font-size: .16rem;
+  color: #fff;
+  /* 兼容适老版，文字垂直居中 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.color-a {
+  background-color: rgb(255, 36, 65);
+}
+.color-b {
+  background-color: rgba(255, 36, 66, 0.7);
+}
+.color-c {
+  background-color: rgba(255, 36, 66, 0.5);
+}
+
+.row-view {
+  display: inline-block !important;
+  width: 100%;
+  height: 1.66rem;
+  line-height: 1.66rem;
+}
+
+.page-section-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 .23rem;
+}
+
+.page-section-btns > view {
+  flex: 1;
+  height: .28rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ff2442;
+  border: .007rem solid #ff2442;
+  border-radius: .05rem;
+  margin: .1rem .14rem;
+}
+
+.scroll-to-top {
+  border-right: 1px solid #ddd;
+}
+
+.next-page {
+  border-left: 1px solid #ddd;
+}
+
+
+.horizontal-rolling {
+  height: 2.5rem;
+}
+
+.arrange {
+  display: flex;
+}
+
+.scroll-item {
+  padding: .17rem .17rem;
+  height: 2.5rem;
+}
+
+.scroll-image {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: .15rem;
+}
+
+/* 隐藏 scroll-view 的滚动条  */
+/* ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+} */

@@ -1,0 +1,12 @@
+<view class="container">
+  <showbox title="获取第三方平台定义的数据">
+    <box>
+        <view class="_ui-space">
+          <view xhs:if="{{content}}">config: {{content}}</view>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getExtConfig">异步获取</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="getExtConfigSync">同步获取</button>
+        </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

@@ -1,0 +1,19 @@
+<template name="status">
+  <view style="text-align:center">响应状态</view>
+  <view style="display:flex;flex-direction:row;justify-content:space-around;overflow:scorll">
+    <text style="color:{{apiData.success?'green':'red'}}">
+      success
+    </text>
+    <text style="color:{{apiData.fail?'green':'red'}}">
+      fail
+    </text>
+    <text style="color:{{apiData.complete?'green':'red'}}">
+      complete
+    </text>
+  </view>
+  <scroll-view scroll-y="{{true}}" style="width: 375px; height:100px">
+    <text style="width:375px; white-space:break-spaces">
+      {{apiData.content}}
+    </text>
+  </scroll-view>
+</template>

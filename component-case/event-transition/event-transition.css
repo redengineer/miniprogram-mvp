@@ -1,0 +1,13 @@
+.width-transition {
+  width: 100px;
+  height: 50px;
+  background: blue;
+  transition: width 2s;
+  -moz-transition: width 2s; /* Firefox 4 */
+  -webkit-transition: width 2s; /* Safari and Chrome */
+  -o-transition: width 2s;
+}
+
+.width-transition:hover {
+  width: 300px;
+}

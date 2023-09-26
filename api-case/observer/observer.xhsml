@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="wrap">
+    <view class="message">
+        <text xhs:if="{{appear}}">小球出现</text>
+        <text xhs:else>小球消失</text>
+    </view>
+    <scroll-view class="scroll-view scroll-view1" scroll-y>
+        <view class="scroll-area" style="{{appear ? 'background: #ccc' : ''}}">
+            <text class="notice">向下滚动让小球出现</text>
+            <view class="filling"></view>
+            <view class="ball"></view>
+        </view>
+    </scroll-view>
+  </view>
+
+  <view class="wrap">
+    <view class="message">
+        <text xhs:if="{{appear2}}">小球出现</text>
+        <text xhs:else>小球消失</text>
+    </view>
+    <scroll-view class="scroll-view scroll-view2" scroll-y>
+        <view class="scroll-area" style="{{appear2 ? 'background: #ccc' : ''}}">
+            <text class="notice">向下滚动让小球出现</text>
+            <!-- 占位元素 -->
+            <view class="filling"></view> 
+            <!-- 小球 -->
+            <view class="ball ball1"></view>
+            <view class="ball2"></view>
+        </view>
+    </scroll-view>
+</view>
+
+</view>

@@ -1,0 +1,27 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="rich-text演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <rich-text nodes="{{page_data_0}}"> </rich-text>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>nodes</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="nodes"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

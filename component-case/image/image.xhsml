@@ -1,0 +1,17 @@
+<view class="container">
+  <showbox title="{{item.text}}" xhs:for="{{array}}" xhs:for-item="item">
+    <box>
+      {{isLazyLoad}}
+      <image bindtap="onClick" lazyLoad="{{isLazyLoad}}" style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}" animation="{{animation}}"></image>
+    </box>
+  </showbox>
+
+  <showbox title="图片加载失败">
+    <box>
+      <view class="section__ctn">
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" src="http://404.com" binderror="onError"></image>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

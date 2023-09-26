@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "可滚动视图区域",
+    "pageOrientation": "auto",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index"
+    }
+}

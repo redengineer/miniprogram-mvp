@@ -1,0 +1,26 @@
+
+._ui-input {
+  background-color: rgba(51, 51, 51, 0.025);
+  border-radius: 18px;
+  padding: 9px 16px;
+}
+
+._ui-textarea {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  padding: 14px 12px;
+}
+
+._ui-button {
+  background-color: rgb(255, 36, 66);
+  color: white;
+}
+
+._ui-button-hover {
+  background-color: #ff2442b3;
+  color: white;
+}
+
+._ui-button-hover::after {
+  border: none;
+}

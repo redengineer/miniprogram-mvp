@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "拍摄/选择视频",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index"
+    }
+}

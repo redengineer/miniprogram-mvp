@@ -1,0 +1,5 @@
+<view 
+  style="padding: {{pad}}; padding-top: {{pt}}; padding-bottom: {{pb}}; padding-left: {{pl}}; padding-right: {{pr}};"
+>
+  <slot></slot>
+</view>

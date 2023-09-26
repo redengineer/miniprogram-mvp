@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "上传文件",
+    "usingComponents": {
+        "showbox": "../../common/component/showbox/index",
+        "box": "../../common/component/container/index"
+    }
+}

@@ -1,0 +1,4 @@
+<view class="inner">
+  {{innerText}}
+  31313123
+</view>

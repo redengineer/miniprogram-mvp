@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="video-show">
+    <video 
+      id="myVideo" 
+      class="_flex_1 myVideo"
+      muted="{{true}}" 
+      autoplay="{{false}}" 
+      enableDanmu="{{true}}"
+      show-center-play-btn="{{false}}" show-mute-btn="{{showMute}}"
+      src="https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-360p.mp4">
+    </video>
+  </view>
+
+  <showbox title="基础使用">
+    <box>
+      <view class="video-action">
+        <view>
+          <button class="_ui-button-transparent" bindtap="bindVideoPlay">播放</button>
+          <button class="_ui-button-transparent" bindtap="bindVideoPause">暂停</button>
+        </view>
+
+        <view>
+          <button class="_ui-button-transparent" bindtap="bindVideoStop">停止</button>
+          <button class="_ui-button-transparent" bindtap="bindVideoSeek">跳到第10秒</button>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

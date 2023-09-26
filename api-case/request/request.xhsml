@@ -1,0 +1,19 @@
+<view class="container">
+  <showbox title="点击按钮发送请求(弹窗返回结果)">
+    <box>
+      <view class="_ui-space">
+        <button bindtap="makeRequest" class="_ui-button" hover-class="_ui-button-hover" data-method="get">GET</button>
+        <button bindtap="request" class="_ui-button" hover-class="_ui-button-hover" data-method="options">OPTIONS</button>
+        <button bindtap="request" class="_ui-button" hover-class="_ui-button-hover" data-method="put">PUT</button>
+        <button bindtap="request" class="_ui-button" hover-class="_ui-button-hover" data-method="delete">DELETE</button>
+
+        <!-- <button bindtap="makeRequestPostFormData" class="_ui-button" hover-class="_ui-button-hover" method="get">POSTFormData</button>
+        <button bindtap="makeRequestTimeout" class="_ui-button" hover-class="_ui-button-hover" method="get">Timeout</button>
+        <button bindtap="makeRequestRequestArrayBuffer" class="_ui-button" hover-class="_ui-button-hover" method="get">ReqArrayBuffer</button>
+        <button bindtap="makeRequestResponseArrayBuffer" class="_ui-button" hover-class="_ui-button-hover" method="get">ResArrayBuffer</button>
+        <button bindtap="makeRequestPostForm" class="_ui-button" hover-class="_ui-button-hover" method="get">POST www-form-urlencoded</button> -->
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

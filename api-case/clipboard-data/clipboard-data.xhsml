@@ -1,0 +1,19 @@
+<view class="container">
+  <showbox title="剪切板操作">
+    <box>
+      <view>
+        <view class="_ui-space">
+          <view>
+            <view style="text-align: center;">{{pasted}}</view>
+            <view class="_ui-input">
+              <input type="text" name="key" value="{{value}}" bindinput="valueChanged"></input>
+            </view>
+          </view>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="copy">复制</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="paste">粘贴</button>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

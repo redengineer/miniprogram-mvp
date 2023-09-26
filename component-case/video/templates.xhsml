@@ -1,0 +1,237 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="video演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <video
+            src="{{page_data_0}}"
+            duration="{{page_data_1}}"
+            controls="{{page_data_2}}"
+            danmu-list="{{page_data_3}}"
+            danmu-btn="{{page_data_4}}"
+            enable-danmu="{{page_data_5}}"
+            autoplay="{{page_data_6}}"
+            loop="{{page_data_7}}"
+            muted="{{page_data_8}}"
+            show-mute-btn="{{page_data_9}}"
+            initial-time="{{page_data_10}}"
+            show-progress="{{page_data_11}}"
+            show-fullscreen-btn="{{page_data_12}}"
+            show-play-btn="{{page_data_13}}"
+            show-center-play-btn="{{page_data_14}}"
+            object-fit="{{page_data_16[page_data_15]}}"
+            poster="{{page_data_17}}"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>src</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="src"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>duration</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_1}}"
+              placeholder="duration"
+              type="text"
+              bindinput="page_fun_1"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启controls</text>
+          </view>
+          <switch
+            checked="{{page_data_2}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_2"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>danmuList</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_3}}"
+              placeholder="danmuList"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启danmuBtn</text>
+          </view>
+          <switch
+            checked="{{page_data_4}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_4"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启enableDanmu</text>
+          </view>
+          <switch
+            checked="{{page_data_5}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_5"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启autoplay</text>
+          </view>
+          <switch
+            checked="{{page_data_6}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_6"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启loop</text>
+          </view>
+          <switch
+            checked="{{page_data_7}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_7"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启muted</text>
+          </view>
+          <switch
+            checked="{{page_data_8}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_8"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showMuteBtn</text>
+          </view>
+          <switch
+            checked="{{page_data_9}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_9"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>initialTime</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_10}}"
+              placeholder="initialTime"
+              type="text"
+              bindinput="page_fun_10"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showProgress</text>
+          </view>
+          <switch
+            checked="{{page_data_11}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_11"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showFullscreenBtn</text>
+          </view>
+          <switch
+            checked="{{page_data_12}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_12"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showPlayBtn</text>
+          </view>
+          <switch
+            checked="{{page_data_13}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_13"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启showCenterPlayBtn</text>
+          </view>
+          <switch
+            checked="{{page_data_14}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_14"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>objectFit</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_15}}"
+              range="{{page_data_16}}"
+              bindchange="page_fun_15"
+            >
+              {{page_data_16[page_data_15] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>poster</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_17}}"
+              placeholder="poster"
+              type="text"
+              bindinput="page_fun_16"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

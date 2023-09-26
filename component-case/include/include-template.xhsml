@@ -1,0 +1,4 @@
+<view class="include-container _ui-space" style="background-color: {{color}};">
+    <view style="text-align: center;">我是include模板的内容 数字递增：{{num}}</view>
+    <button style="background-color: {{color === 'red' ? 'blue': 'red'}};" bindtap="onChangeColor" class="_ui-button" hover-class="_ui-button-hover">include内部的按钮</button>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+  <showbox title="支付演示">
+    <box>
+      <view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="handlePayment" >支付 0.1元</button>
+      </view>
+    </box>
+  </showbox>
+</view>

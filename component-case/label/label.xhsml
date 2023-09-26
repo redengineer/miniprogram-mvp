@@ -1,0 +1,48 @@
+<view class="container">
+  <showbox title="表单组件在label内">
+    <box>
+      <checkbox-group class="group" bindchange="checkboxChange">
+        <view class="label-1" xhs:for="{{checkboxItems}}">
+          <label class="red">
+            <checkbox value="{{item.name}}" checked="{{item.checked}}" color="red"></checkbox>
+            <text class="label-1-text">{{item.value}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </box>
+  </showbox>
+
+  <showbox title="label用for标识表单组件">
+    <box>
+      <radio-group class="group" bindchange="radioChange" data-for="forLabel">
+        <view class="label-2" xhs:for="{{radioItems}}">
+          <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" color="red"></radio>
+          <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+    </box>
+  </showbox>
+
+  <showbox title="label内有多个时选中第一个">
+    <box>
+      <label class="label-3">
+        <checkbox class="checkbox-3" color="red">选项一</checkbox>
+        <checkbox class="checkbox-3" color="red">选项二</checkbox>
+        <view class="label-3-text">点击该label下的文字默认选中第一个checkbox</view>
+      </label>
+    </box>
+  </showbox>
+
+  <showbox title="分享">
+    <box>
+      <view class="page-section page-section-gap">
+        <button id="share" open-type="share" style="display:none"></button>
+        <label class="label-3" for="share">
+          分享
+        </label>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

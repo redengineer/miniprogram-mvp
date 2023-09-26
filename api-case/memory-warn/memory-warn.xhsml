@@ -1,0 +1,13 @@
+<view class="container">
+  <showbox title="默认">
+    <box>
+      <view>
+        <text>响应：{{value}}</text>
+        <text>数组长度：{{memory.length}}</text>
+        <button bindtap="bindSubscribe">订阅内存告警</button>
+        <button bindtap="bindUnSubscribe">取消订阅</button>
+        <button bindtap="bindMemory">点击按钮，消耗内存</button>
+      </view>
+    </box>
+  </showbox>
+</view>

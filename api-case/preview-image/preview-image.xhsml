@@ -1,0 +1,9 @@
+<view class="container">
+  <div class="page-body">
+    <view class="btn-area">
+      <button type="primary" bindtap="showTabBar">showTabBar</button>
+      <button type="primary" bindtap="setTabBarItem">设置</button>
+      <button type="primary" bindtap="hideTabBar">hideTabBar</button>
+    </view>
+  </div>
+</view>

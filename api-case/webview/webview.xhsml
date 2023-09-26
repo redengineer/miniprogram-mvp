@@ -1,0 +1,4 @@
+<web-view 
+    src="https://www.xiaohongshu.com/miniapp/miniapp-webview?fullscreen=true&disableDragBack=yes&disableBackForwardNavigationGestures=true" 
+    bindmessage="handleMessage"
+></web-view>

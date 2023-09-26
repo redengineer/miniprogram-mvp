@@ -1,0 +1,21 @@
+<view class="container">
+  <showbox title="上传文件">
+    <box>
+      <view class="_ui-space">
+        <block xhs:if="{{imageSrc}}">
+          <view>
+            <image src="{{imageSrc}}" class="image" mode="aspectFit"></image>
+          </view>
+        </block>
+        <block xhs:else>
+          <view bindtap="chooseImage">
+            <view class="upload-text">点击选择图片</view>
+          </view>
+        </block>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="abortHandle">中止上传任务</button>
+          <!-- <button class="_ui-button" hover-class="_ui-button-hover" bindtap="offProgressUpdateUploadTask">取消监听上传进度事件</button>
+          <button class="_ui-button" hover-class="_ui-button-hover" bindtap="offHeadersReceived">取消监听HeadersReceived</button> -->
+      </view>
+    </box>
+  </showbox>
+</view>

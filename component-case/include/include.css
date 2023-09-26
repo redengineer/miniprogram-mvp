@@ -1,0 +1,19 @@
+
+.include-container {
+    /* background-color: red; */
+    color: white;
+}
+
+.colorlist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colorlist text {
+    padding: 5px;
+}
+
+.select_block {
+    border-radius: 1000px;
+    border: 1px solid red;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <text>
+        {{value}}
+      </text>
+      <button bindtap="handle1">setTimeout</button>
+      <button bindtap="handle2">clearTimeout</button>
+      <button bindtap="handle3">setInterval</button>
+      <button bindtap="handle4">clearInterval</button>
+    </view>
+  </view>
+</view>

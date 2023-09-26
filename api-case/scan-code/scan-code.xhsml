@@ -1,0 +1,12 @@
+<view class="container">
+  <showbox title="扫码">
+    <box>
+      <view class="_text_wrap _mb8">扫码结果：{{content}}</view>
+      <view>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="scanCode">扫一扫</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

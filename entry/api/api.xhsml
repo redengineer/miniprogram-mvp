@@ -1,0 +1,39 @@
+<view class="page">
+    <view class="head-bg">
+        <view class="head-bg-logo">
+            <image style="width: 154px;"  src="../../image/logo.png"  mode="widthFix"/>
+            <view>官方演示小程序</view>
+        </view>
+        <view class="search">
+            <view class="search-box" bindtap="openSearch">
+                <view class="search-icon">
+                    <image src="../../image/search_1.5.png"></image>
+                </view>
+                <text>搜索组件、能力或指南</text>
+            </view>
+        </view>
+        <image class="head-bg-img" src="../../image/Union.png"  mode="widthFix"/>
+    </view>
+
+    <view class="card-container">
+        <view class="card-content">
+            <view xhs:for-items="{{items}}" xhs:for-item="item" xhs:key="*item">
+                <view class="card-item {{item.open ? '' : 'item-close'}} {{index+1 === items.length && !item.open ? 'card-item-last' : ''}}" bindtap="toggleClick" data-index="{{index}}" data-id="{{item.id}}">
+                    <image class="item-logo" src="{{item.icon}}"></image>
+                    <text class="item-desc">{{item.name}}</text>
+                    <image xhs:if="{{item.id}}" class="item-logo item-toggle" src="https://b.bdstatic.com/searchbox/icms/searchbox/img/right_arrow.png"></image>
+                    <image xhs:else class="item-logo item-toggle" src="{{item.open ? '../../image/top.png' : '../../image/bottom.png'}}" mode="widthFix"></image>
+                </view>
+                <view xhs:if="{{item.open}}" class="card-item-extend">
+                    <view hover-class="hover" xhs:for-items="{{item.list}}" xhs:for-item="subItem" bindtap="oneItemClick" data-id="{{subItem.id}}" data-show="{{subItem.show}}">
+                        <view class="sub-item">
+                            <text class="sub-item-desc">{{subItem.subName}}</text>
+                            <text class="sub-item-desc-tra">{{subItem.subNameTra}}</text>
+                            <image class="item-logo item-toggle-extend" src="../../image/right.png" mode="heightFix"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

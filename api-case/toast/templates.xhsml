@@ -1,0 +1,66 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="showToast演示">
+    <box>
+      <api-status
+        success="{{page_data_5}}"
+        complete="{{page_data_7}}"
+        fail="{{page_data_6}}"
+        text="{{page_data_8}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="title" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="icon" type="text" bindinput="page_fun_2" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="image" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="duration" type="text" bindinput="page_fun_4" />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <text class="_dflex _ai_center _px8">是否开启mask</text>
+          <switch color="rgba(255, 36, 66, 1)" bindchange="page_fun_5" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="hideToast演示">
+    <box>
+      <api-status
+        success="{{page_data_9}}"
+        complete="{{page_data_11}}"
+        fail="{{page_data_10}}"
+        text="{{page_data_12}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_6"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

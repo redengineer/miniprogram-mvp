@@ -1,0 +1,9 @@
+<view class="container">
+  <showbox title="默认">
+    <box>
+      <view class="page-body">
+        <button bindtap="hideHomeButton">hideHomeButton</button>
+      </view>
+    </box>
+  </showbox>
+</view>

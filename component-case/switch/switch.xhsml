@@ -1,0 +1,138 @@
+
+<view class="container">
+
+  <showbox title="基础样式">
+    <box>
+      <switch checked color="rgba(255, 36, 66, 1)" style="--a4abe58c: #777;"/>
+      <switch class="_ml8" checked color="rgba(255, 36, 66, 0.4)" disabled/>
+      <switch class="_ml8" checked="{{false}}" color="rgba(255, 36, 66, 1)"/>
+      <switch class="_ml8"  color="rgba(255, 36, 66, 1)"/>
+    </box>
+  </showbox>
+
+  <showbox title="推荐展示样式">
+    <box pt="0" pb="0">
+      <view class="_dflex _jc_space-between _py6 _ai_center"> 
+        <text>
+          标题描述
+        </text>
+        <switch checked color="rgba(255, 36, 66, 1)"/>
+      </view>
+      <view class="_dflex _jc_space-between _py6 _ai_center">
+        <view>
+          <view class="switch_font_title">
+            标题描述
+          </view>
+          <view class="switch_font_sub">
+            可添加二级描述文本
+          </view>
+        </view>
+        <switch checked="{{false}}" color="rgba(255, 36, 66, 1)"/>
+      </view>
+    </box>
+  </showbox>
+
+  <!-- <view class="page-body">
+    <showbox title="默认">
+      <box>
+        <view class="page-section page-section-spacing">
+          <switch
+            checked="{{checked}}"
+            disabled="{{disabled}}"
+            type="{{type}}"
+            color="{{color}}"
+            bindchange="changeValue"
+          />
+          <view>当前value: {{curValue}}</view>
+        </view>
+      </box>
+    </showbox>
+
+    <showbox title="默认">
+      <box>
+        <view class="page-section" style="margin-top: 20px;margin-bottom: 20px;">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">当前是否选中<text class="filed-tip">(checked)</text></view>
+              <view class="weui-cell__ft">
+                <switch checked="{{checked}}" bindchange="changeChecked" />
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">是否禁用<text class="filed-tip">(disabled)</text></view>
+              <view class="weui-cell__ft">
+                <switch checked="{{disabled}}" bindchange="changeDisabled" />
+              </view>
+            </view>
+    
+            <view class="weui-cell">
+              <view class="weui-cell__bd">样式 <text class="filed-tip">(type)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <radio-group bindchange="changeType" class="weui-cell">
+                  <label class="weui-cell weui-check__label">
+                    <view class="weui-cell__hd">
+                      <radio value="switch" checked="{{ type === 'switch' }}"/>
+                    </view>
+                    <view class="weui-cell__bd">switch</view>
+                  </label>
+                  <label class="weui-cell weui-check__label">
+                    <view class="weui-cell__hd">
+                      <radio value="checkbox" checked="{{ type === 'checkbox' }}"/>
+                    </view>
+                    <view class="weui-cell__bd">checkbox</view>
+                  </label>
+                </radio-group>
+              </view>
+            </view>
+    
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">checkbox的颜色 <text class="filed-tip">(color)</text></view>
+              <view class="weui-cell__ft" style="flex:1">
+                <input class="weui-input" value="{{color}}" bindinput="changeColor" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </box>
+    </showbox>
+  </view>
+
+  <view class="page-body">
+    <showbox title="默认">
+      <box>
+        <view class="page-section page-section-gap">
+          <view class="page-section-title">默认样式</view>
+          <view class="body-view">
+            <switch checked bindchange="switch1Change"/>
+            <switch bindchange="switch2Change"/>
+          </view>
+        </view>
+      </box>
+    </showbox>
+
+    <showbox title="默认">
+      <box>
+        <view class="page-section">
+          <view class="page-section-title">推荐展示样式</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">开启中</view>
+              <view class="weui-cell__ft">
+                <switch checked />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_switch">
+              <view class="weui-cell__bd">关闭</view>
+              <view class="weui-cell__ft">
+                <switch />
+              </view>
+            </view>
+          </view>
+        </view>
+      </box>
+    </showbox>
+  </view> -->
+</view>
+
+<include src="templates.xhsml" />

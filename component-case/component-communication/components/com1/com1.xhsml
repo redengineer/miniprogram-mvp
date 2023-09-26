@@ -1,0 +1,9 @@
+<view class="com1-container" bindtap="handleClick">
+    <view style="text-align: center;">这是父组件</view>
+    <view style="text-align: center;">{{childMessage}}</view>
+    <com2 id="com2" bindmyevent="onChildMessage" message="{{childDataMessage}}"/>
+    <view class="_ui-space _px10">
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="handleEventMessage">通过data变更修改子组件</button>
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="handleSelectMessage">通过selectComponent触发子组件事件</button>
+    </view>
+</view>

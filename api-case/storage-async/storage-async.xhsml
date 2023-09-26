@@ -1,0 +1,76 @@
+<view class="container">
+  <template is="status" data="{{apiData}}" />
+  <showbox title="异步数据存储">
+    <box>
+      <view style="padding: 5px 0;">
+        <view style="text-align: center">{{ title }}</view>
+        <view style="text-align: center" class="_text_wrap">{{ content }}</view>
+      </view>
+      <view class="_ui-space">
+        <view class="_ui-input">
+          <input
+            type="text"
+            placeholder="请输入key"
+            name="key"
+            value="{{ key }}"
+            bindinput="keyChange"
+          />
+        </view>
+        <view class="_ui-input">
+          <input
+            type="text"
+            placeholder="请输入value"
+            name="data"
+            value="{{ data }}"
+            bindinput="dataChange"
+          />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="setStorage"
+        >
+          存储数据
+        </button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="setStorageObject"
+        >
+          存储Object数据
+        </button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="getStorage"
+        >
+          读取数据
+        </button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="clearStorageByKey"
+        >
+          通过key清理数据
+        </button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="getStorageInfo"
+        >
+          获取storage信息
+        </button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="clearStorage"
+        >
+          清理数据
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

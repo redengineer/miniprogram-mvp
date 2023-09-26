@@ -1,0 +1,8 @@
+<view class="xhs-demo-card">
+  <view xhs:if="{{title}}" class="xhs-demo-card-title xhs-demo-card-spiver">
+    {{title}}
+  </view>
+  <view class="xhs-demo-card-content">
+   <slot></slot>
+  </view>
+</view>

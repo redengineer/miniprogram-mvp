@@ -1,0 +1,5 @@
+<template name="template">
+  <view style="text-align: center;">
+    template内部的value值：{{value}}
+  </view>
+</template>

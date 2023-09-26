@@ -1,0 +1,163 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="radio演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <radio
+            value="{{page_data_0}}"
+            checked="{{page_data_1}}"
+            disabled="{{page_data_2}}"
+            color="{{page_data_3}}"
+          >
+          </radio>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_0}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_0"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启checked</text>
+          </view>
+          <switch
+            checked="{{page_data_1}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_1"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_2}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_2"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>color</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_3}}"
+              placeholder="color"
+              type="text"
+              bindinput="page_fun_3"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="radio-group演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <radio-group>
+            <radio value="1"></radio>
+            <radio value="2"></radio>
+            <radio value="3"></radio>
+          </radio-group>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="checkbox演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <checkbox
+            value="{{page_data_4}}"
+            disabled="{{page_data_5}}"
+            checked="{{page_data_6}}"
+            color="{{page_data_7}}"
+          >
+          </checkbox>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>value</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_4}}"
+              placeholder="value"
+              type="text"
+              bindinput="page_fun_4"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_5}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_5"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启checked</text>
+          </view>
+          <switch
+            checked="{{page_data_6}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_6"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>color</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_7}}"
+              placeholder="color"
+              type="text"
+              bindinput="page_fun_7"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="checkbox-group演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <checkbox-group>
+            <checkbox value="1"></checkbox>
+            <checkbox value="2"></checkbox>
+            <checkbox value="3"></checkbox>
+          </checkbox-group>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

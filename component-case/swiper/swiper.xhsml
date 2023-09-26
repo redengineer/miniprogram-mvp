@@ -1,0 +1,111 @@
+<view class="container">
+  <showbox title="基础展示">
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      current="{{current}}"
+      vertical="{{vertical}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      indicator-color="{{indicatorColor}}"
+      indicator-active-color="{{indicatorActiveColor}}"
+      previous-margin="10px"
+      next-margin="10px"
+      bindchange="onChange"
+    >
+      <block xhs:for="{{background}}" xhs:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}">{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </showbox>
+
+  <showbox title="可控制swiper">
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      current="{{current}}"
+      vertical="{{vertical}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      indicator-color="{{indicatorColor}}"
+      indicator-active-color="{{indicatorActiveColor}}"
+      previous-margin="10px"
+      next-margin="10px"
+      bindchange="onChange"
+    >
+      <block xhs:for="{{background}}" xhs:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}">{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="control-container">
+      <view class="control-line split-line-bottom">
+        <view class="control-line-text">指示点</view>
+        <view class="control-line-button">
+          <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots" color="red"/>
+        </view>
+      </view>
+
+      <view class="control-line split-line-bottom">
+        <view class="control-line-text">自动播放</view>
+        <view class="control-line-button">
+          <switch checked="{{autoplay}}" bindchange="changeAutoplay" color="red"/>
+        </view>
+      </view>
+
+      <view class="control-line split-line-bottom">
+        <view class="control-line-text">是否循环播放</view>
+        <view class="control-line-button">
+          <switch checked="{{circular}}" bindchange="changeCircular" color="red"/>
+        </view>
+      </view>
+
+      <view class="control-line">
+        <view class="control-line-text">是否垂直</view>
+        <view class="control-line-button">
+          <switch checked="{{vertical}}" bindchange="changeVertical" color="red"/>
+        </view>
+      </view>
+    </view>
+  </showbox>
+
+  <!-- <showbox title="与video组件联动">
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      current="{{current}}"
+      vertical="{{vertical}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      indicator-color="{{indicatorColor}}"
+      indicator-active-color="{{indicatorActiveColor}}"
+      previous-margin="10px"
+      next-margin="40rpx"
+      bindchange="onChange"
+    >
+      <block xhs:for="{{background}}" xhs:key="*this">
+        <swiper-item>
+            <video id="myVideo" autoplay="{{true}}" style="height:{{height}}px" src="https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-360p.mp4"></video>
+        </swiper-item>
+      </block>
+    </swiper>
+  </showbox>
+
+  <showbox title="幻灯片切换时长(ms)">
+    <view class="slider-outer">
+      <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" active-color="red"/>
+    </view>
+  </showbox>
+
+  <showbox title="自动播放间隔时长(ms)">
+    <view class="slider-outer">
+      <slider bindchange="intervalChange" value="{{interval}}" min="2000" max="10000" active-color="red"/>
+    </view>
+  </showbox> -->
+</view>

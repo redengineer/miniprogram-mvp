@@ -1,0 +1,187 @@
+<view class="container">
+  <showbox title="手势事件测试">
+    <box>
+      <view class="info-panel">
+        <text>tap count: {{ tapCount }}</text>
+        <text>longtap count: {{ longTapCount }}</text>
+        <text>longpress count: {{ longPressCount }}</text>
+        <text>touchstart count: {{ touchStartCount }}</text>
+        <text>touchmove count: {{ touchMoveCount }}</text>
+        <text>touchend count: {{ touchEndCount }}</text>
+        <text>touchcancel count: {{ touchCancelCount }}</text>
+      </view>
+
+      <button
+        class="_ui-button"
+        hover-class="_ui-button-hover"
+        bind:tap="handleTapCount"
+        bind:longtap="handleLongTapCount"
+        bind:longpress="handleLongPressCount"
+        bind:touchstart="handleTouchStartCount"
+        bind:touchmove="handleTouchMoveCount"
+        bind:touchend="handleTouchEndCount"
+      >
+        用我测试手势 👀
+      </button>
+    </box>
+  </showbox>
+  <showbox title="绑定动态事件回调函数">
+    <box>
+      <view class="info-panel">
+        <button bindtap="switchTap">点我切换绑定的tap函数</button>
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="{{ tapVariable.a }}"
+        >
+          {{ tapVariable.a }}
+        </button>
+      </view>
+    </box>
+  </showbox>
+  <showbox title="手势事件冒泡">
+    <box>
+      <view class="text-container">
+        {{ eventList1.join(', ') }}
+      </view>
+      <view
+        class="box box1"
+        bind:tap="handleBoxTap1"
+        data-id="box1"
+        id="box111"
+      >
+        <text>box1, bindtap</text>
+        <view
+          class="box box2"
+          bind:tap="handleBoxTap1"
+          data-id="box2"
+        >
+          <text>box2, bindtap</text>
+          <view
+            class="box box3"
+            bind:tap="handleBoxTap1"
+            data-id="box3"
+          >
+            <text>box3, bindtap</text>
+          </view>
+        </view>
+      </view>
+    </box>
+    <box>
+      <button bindtap="clearTap1">清空</button>
+    </box>
+  </showbox>
+  <showbox title="事件捕获capture">
+    <box>
+      <view class="text-container">
+        {{ eventList2.join(', ') }}
+      </view>
+      <view
+        class="box box1"
+        capture-bind:tap="handleBoxTap2"
+        data-id="box1"
+      >
+        <text>capture-bind:tap</text>
+        <view
+          class="box box2"
+          capture-bind:tap="handleBoxTap2"
+          data-id="box2"
+        >
+          <text>capture-bind:tap</text>
+          <view
+            class="box box3"
+            capture-bind:tap="handleBoxTap2"
+            data-id="box3"
+          >
+            <text>capture-bind:tap</text>
+          </view>
+        </view>
+      </view>
+    </box>
+    <box>
+      <button bindtap="clearTap2">清空</button>
+    </box>
+  </showbox>
+  <showbox title="事件冒泡和阻止冒泡的组合">
+    <box>
+      <view class="text-container">
+        {{ eventList3.join(', ') }}
+      </view>
+      <view
+        class="box box1"
+        bind:tap="handleBoxTap3"
+        data-id="box1"
+      >
+        <text>bindtap</text>
+        <view
+          class="box box2"
+          catch:tap="handleBoxTap3"
+          data-id="box2"
+        >
+          <text>catchtap</text>
+          <view
+            class="box box3"
+            bind:tap="handleBoxTap3"
+            data-id="box3"
+          >
+            <text>bindtap</text>
+          </view>
+        </view>
+      </view>
+    </box>
+    <box>
+      <button bindtap="clearTap3">清空</button>
+    </box>
+  </showbox>
+  <showbox title="css animation">
+    <box>
+      <view
+        bindanimationstart="handleAnimationStart"
+        bindanimationiteration="handleAnimationIteration"
+        bindanimationend="handleAnimationEnd"
+        class="{{ animationClass }}"
+      >
+      </view>
+      <button
+        class="_ui-button mt-10"
+        bindtap="handleAnimation"
+      >
+        开始动画
+      </button>
+    </box>
+  </showbox>
+  <showbox title="css transition">
+    <box>
+      <view
+        bindtransitionend="handleTransitionEnd"
+        data-type="transitionend"
+        class="transitionbox"
+      ></view>
+    </box>
+  </showbox>
+  <showbox title="animation API">
+    <box>
+      <view class="wrapper">
+        <view
+          bindanimationend="handleAnimationEnd"
+          bindanimationstart="handleAnimationStart"
+          animation="{{ animationData }}"
+          bindtransitionend="handleTransitionEnd"
+          style="background: red; height: 100rpx; width: 100rpx"
+        ></view>
+      </view>
+      <button
+        class="mt-10"
+        bindtap="handleAnimationAPIStart"
+      >
+        开始动画
+      </button>
+    </box>
+  </showbox>
+  <showbox
+    title="自定义组件动画事件测试"
+    bindtransitionend="handleTransitionEnd"
+    class="transitionbox"
+  >
+  </showbox>
+</view>

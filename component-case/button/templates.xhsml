@@ -1,0 +1,204 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="button演示">
+    <box>
+      <view class="_ui-space">
+        <view>
+          <button
+            size="{{page_data_1[page_data_0]}}"
+            type="{{page_data_3[page_data_2]}}"
+            plain="{{page_data_4}}"
+            disabled="{{page_data_5}}"
+            loading="{{page_data_6}}"
+            form-type="{{page_data_8[page_data_7]}}"
+            open-type="{{page_data_10[page_data_9]}}"
+            contact-type="{{page_data_12[page_data_11]}}"
+            contact-id="{{page_data_13}}"
+            hover-class="{{page_data_14}}"
+            hover-stop-propagation="{{page_data_15}}"
+            hover-start-time="{{page_data_16}}"
+            hover-stay-time="{{page_data_17}}"
+          >
+            我是一个按钮
+          </button>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>size</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_0}}"
+              range="{{page_data_1}}"
+              bindchange="page_fun_0"
+            >
+              {{page_data_1[page_data_0] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>type</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_2}}"
+              range="{{page_data_3}}"
+              bindchange="page_fun_1"
+            >
+              {{page_data_3[page_data_2] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启plain</text>
+          </view>
+          <switch
+            checked="{{page_data_4}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_2"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启disabled</text>
+          </view>
+          <switch
+            checked="{{page_data_5}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_3"
+          />
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启loading</text>
+          </view>
+          <switch
+            checked="{{page_data_6}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_4"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>formType</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_7}}"
+              range="{{page_data_8}}"
+              bindchange="page_fun_5"
+            >
+              {{page_data_8[page_data_7] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>openType</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_9}}"
+              range="{{page_data_10}}"
+              bindchange="page_fun_6"
+            >
+              {{page_data_10[page_data_9] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>contactType</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <picker
+              value="{{page_data_11}}"
+              range="{{page_data_12}}"
+              bindchange="page_fun_7"
+            >
+              {{page_data_12[page_data_11] ?? '请选择'}}
+            </picker>
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>contactId</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_13}}"
+              placeholder="contactId"
+              type="text"
+              bindinput="page_fun_8"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>hoverClass</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_14}}"
+              placeholder="hoverClass"
+              type="text"
+              bindinput="page_fun_9"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex _jc_space-between">
+          <view class="_dflex _ai_center">
+            <text>是否开启hoverStopPropagation</text>
+          </view>
+          <switch
+            checked="{{page_data_15}}"
+            color="rgba(255, 36, 66, 1)"
+            bindchange="page_fun_10"
+          />
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>hoverStartTime</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_16}}"
+              placeholder="hoverStartTime"
+              type="text"
+              bindinput="page_fun_11"
+            />
+          </view>
+        </view>
+
+        <view class="_dflex">
+          <view style="flex: 4" class="_dflex _ai_center"
+            ><text>hoverStayTime</text></view
+          >
+          <view style="flex: 6" class="_ui-input">
+            <input
+              value="{{page_data_17}}"
+              placeholder="hoverStayTime"
+              type="text"
+              bindinput="page_fun_12"
+            />
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+</view>

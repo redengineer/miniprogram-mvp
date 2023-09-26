@@ -1,0 +1,13 @@
+
+.progress-box{
+  display: flex;
+}
+.progress-cancel{
+  margin-left: 20px;
+}
+.progress-container {
+  overflow: hidden;
+}
+.progress-container > view {
+  margin: 20px 0;
+}

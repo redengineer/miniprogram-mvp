@@ -1,0 +1,161 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="getLocation演示">
+    <box>
+      <api-status
+        success="{{page_data_1}}"
+        complete="{{page_data_3}}"
+        fail="{{page_data_2}}"
+        text="{{page_data_4}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="type" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="startLocationUpdate演示">
+    <box>
+      <api-status
+        success="{{page_data_5}}"
+        complete="{{page_data_7}}"
+        fail="{{page_data_6}}"
+        text="{{page_data_8}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_2"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="startLocationUpdateBackground演示">
+    <box>
+      <api-status
+        success="{{page_data_9}}"
+        complete="{{page_data_11}}"
+        fail="{{page_data_10}}"
+        text="{{page_data_12}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_3"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="stopLocationUpdate演示">
+    <box>
+      <api-status
+        success="{{page_data_13}}"
+        complete="{{page_data_15}}"
+        fail="{{page_data_14}}"
+        text="{{page_data_16}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_4"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="chooseLocation演示">
+    <box>
+      <api-status
+        success="{{page_data_19}}"
+        complete="{{page_data_21}}"
+        fail="{{page_data_20}}"
+        text="{{page_data_22}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="latitude" type="text" bindinput="page_fun_6" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="longitude" type="text" bindinput="page_fun_7" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_5"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="openLocation演示">
+    <box>
+      <api-status
+        success="{{page_data_28}}"
+        complete="{{page_data_30}}"
+        fail="{{page_data_29}}"
+        text="{{page_data_31}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="latitude" type="text" bindinput="page_fun_9" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="longitude" type="text" bindinput="page_fun_10" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="scale" type="text" bindinput="page_fun_11" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="name" type="text" bindinput="page_fun_12" />
+        </view>
+
+        <view class="_ui-input">
+          <input placeholder="address" type="text" bindinput="page_fun_13" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_8"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

@@ -1,0 +1,149 @@
+<!-- 以下内容为自动生成，请勿手动修改 -->
+
+<view class="container">
+  <showbox title="navigateBack演示">
+    <box>
+      <api-status
+        success="{{page_data_1}}"
+        complete="{{page_data_3}}"
+        fail="{{page_data_2}}"
+        text="{{page_data_4}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="delta" type="text" bindinput="page_fun_1" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_0"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="navigateTo演示">
+    <box>
+      <api-status
+        success="{{page_data_6}}"
+        complete="{{page_data_8}}"
+        fail="{{page_data_7}}"
+        text="{{page_data_9}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_3" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_2"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="reLaunch演示">
+    <box>
+      <api-status
+        success="{{page_data_11}}"
+        complete="{{page_data_13}}"
+        fail="{{page_data_12}}"
+        text="{{page_data_14}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_5" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_4"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="redirectTo演示">
+    <box>
+      <api-status
+        success="{{page_data_16}}"
+        complete="{{page_data_18}}"
+        fail="{{page_data_17}}"
+        text="{{page_data_19}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_7" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_6"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="switchTab演示">
+    <box>
+      <api-status
+        success="{{page_data_21}}"
+        complete="{{page_data_23}}"
+        fail="{{page_data_22}}"
+        text="{{page_data_24}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <view class="_ui-input">
+          <input placeholder="url" type="text" bindinput="page_fun_9" />
+        </view>
+
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_8"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="exitMiniProgram演示">
+    <box>
+      <api-status
+        success="{{page_data_25}}"
+        complete="{{page_data_27}}"
+        fail="{{page_data_26}}"
+        text="{{page_data_28}}"
+      >
+      </api-status>
+      <view class="_ui-space _mt8">
+        <button
+          class="_ui-button"
+          hover-class="_ui-button-hover"
+          bindtap="page_fun_10"
+        >
+          触发
+        </button>
+      </view>
+    </box>
+  </showbox>
+</view>

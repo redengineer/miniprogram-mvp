@@ -1,0 +1,70 @@
+<view class="container">
+    <showbox title="基础展示">
+      <box>
+        <radio
+          checked="{{checked}}"
+          disabled="{{disabled}}"
+          color="{{color}}"
+        />
+      </box>
+    </showbox>
+
+    <showbox title="样式控制">
+      <box>
+        <view class="_end_split _py4">
+          <view class="weui-cell__bd">当前是否选中<text class="filed-tip">(checked)</text></view>
+          <view class="weui-cell__ft">
+            <switch checked="{{checked}}" bindchange="changeChecked" color="red"/>
+          </view>
+        </view>
+
+        <view class="_end_split _py4">
+          <view class="weui-cell__bd">是否禁用<text class="filed-tip">(disabled)</text></view>
+          <view class="weui-cell__ft">
+            <switch checked="{{disabled}}" bindchange="changeDisabled" color="red"/>
+          </view>
+        </view>
+
+        <view class="_py4">
+          <view class="weui-cell__bd">radio的颜色 <text class="filed-tip">(color)</text></view>
+          <view class="weui-cell__ft" style="flex:1">
+            <input class="weui-input" value="{{color}}" bindinput="changeColor" />
+          </view>
+        </view>
+      </box>
+    </showbox>
+
+    <showbox title="案例1">
+      <box>
+        <view>radioGroup1</view>
+          <view>
+            <view>当前选择value: {{curValue}}</view>
+            <radio-group bindchange="radioChange" class="_dflex _jc_space-between">
+              <label xhs:for="{{items}}" xhs:key="{{item.value}}">
+                <view>
+                  <radio value="{{item.value}}" checked="{{item.checked}}" color="red"/>
+                </view>
+                <view>{{item.name}}</view>
+              </label>
+            </radio-group>
+          </view>
+      </box>
+    </showbox>
+
+    <showbox title="案例2">
+      <box>
+        <view>radioGroup2</view>
+        <view>
+          <view>当前选择value: {{curValue2}}</view>
+          <radio-group bindchange="radioChange2" class="_dflex _jc_space-between">
+            <label xhs:for="{{items2}}" xhs:key="{{item.value}}">
+              <view class="weui-cell__hd">
+                <radio value="{{item.value}}" checked="{{item.checked}}" color="red"/>
+              </view>
+              <view>{{item.name}}</view>
+            </label>
+          </radio-group>
+        </view>
+      </box>
+    </showbox>
+</view>

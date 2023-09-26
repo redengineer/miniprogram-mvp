@@ -1,0 +1,237 @@
+/* 定义一些常用的通用的边距基础类 */
+
+/* 4px */
+._ma2 {
+  margin: 4px;
+}
+._mx2 {
+  margin: 0 4px;
+}
+._my2 {
+  margin: 4px 0;
+}
+
+._mt2 {
+  margin-top: 4px;
+}
+._mb2 {
+  margin-bottom: 4px;
+}
+._ml2 {
+  margin-left: 4px;
+}
+._mr2 {
+  margin-right: 4px;
+}
+
+._pa2 {
+  padding: 4px;
+}
+._px2 {
+  padding: 0 4px;
+}
+._py2 {
+  padding: 4px 0;
+}
+
+._pt2 {
+  padding-top: 4px;
+}
+._pb2 {
+  padding-bottom: 4px;
+}
+._pl2 {
+  padding-left: 4px;
+}
+._pr2 {
+  padding-right: 4px;
+}
+
+/* 8px */
+._ma4 {
+  margin: 8px;
+}
+._mx4 {
+  margin: 0 8px;
+}
+._my4 {
+  margin: 8px 0;
+}
+
+._mt4 {
+  margin-top: 8px;
+}
+._mb4 {
+  margin-bottom: 8px;
+}
+._ml4 {
+  margin-left: 8px;
+}
+._mr4 {
+  margin-right: 8px;
+}
+
+._pa4 {
+  padding: 8px;
+}
+._px4 {
+  padding: 0 8px;
+}
+._py4 {
+  padding: 8px 0;
+}
+
+._pt4 {
+  padding-top: 8px;
+}
+._pb4 {
+  padding-bottom: 8px;
+}
+._pl4 {
+  padding-left: 8px;
+}
+._pr4 {
+  padding-right: 8px;
+}
+
+/* 12px */
+._ma6 {
+  margin: 12px;
+}
+._mx6 {
+  margin: 0 12px;
+}
+._my6 {
+  margin: 12px 0;
+}
+
+._mt6 {
+  margin-top: 12px;
+}
+._mb6 {
+  margin-bottom: 12px;
+}
+._ml6 {
+  margin-left: 12px;
+}
+._mr6 {
+  margin-right: 12px;
+}
+
+._pa6 {
+  padding: 12px;
+}
+._px6 {
+  padding: 0 12px;
+}
+._py6 {
+  padding: 12px 0;
+}
+
+._pt6 {
+  padding-top: 12px;
+}
+._pb6 {
+  padding-bottom: 12px;
+}
+._pl6 {
+  padding-left: 12px;
+}
+._pr6 {
+  padding-right: 12px;
+}
+
+/* 16px */
+._ma8 {
+  margin: 16px;
+}
+._mx8 {
+  margin: 0 16px;
+}
+._my8 {
+  margin: 16px 0;
+}
+
+._mt8 {
+  margin-top: 16px;
+}
+._mb8 {
+  margin-bottom: 16px;
+}
+._ml8 {
+  margin-left: 16px;
+}
+._mr8 {
+  margin-right: 16px;
+}
+
+._pa8 {
+  padding: 16px;
+}
+._px8 {
+  padding: 0 16px;
+}
+._py8 {
+  padding: 16px 0;
+}
+
+._pt8 {
+  padding-top: 16px;
+}
+._pb8 {
+  padding-bottom: 16px;
+}
+._pl8 {
+  padding-left: 16px;
+}
+._pr8 {
+  padding-right: 16px;
+}
+
+
+/* 20px */
+._ma10 {
+  margin: 20px;
+}
+._mx10 {
+  margin: 0 20px;
+}
+._my10 {
+  margin: 20px 0;
+}
+
+._mt10 {
+  margin-top: 20px;
+}
+._mb10 {
+  margin-bottom: 20px;
+}
+._ml10 {
+  margin-left: 20px;
+}
+._mr10 {
+  margin-right: 20px;
+}
+
+._pa10 {
+  padding: 20px;
+}
+._px10 {
+  padding: 0 20px;
+}
+._py10 {
+  padding: 20px 0;
+}
+
+._pt10 {
+  padding-top: 20px;
+}
+._pb10 {
+  padding-bottom: 20px;
+}
+._pl10 {
+  padding-left: 20px;
+}
+._pr10 {
+  padding-right: 20px;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+    <include src="include-template.xhsml"/>
+
+    <showbox title="自定义组件内的include模板">
+        <view style="padding: 10px;">
+            <include src="include-template.xhsml"/>
+        </view>
+    </showbox>
+    
+    <showbox title="page页面">
+        <view style="padding: 10px;" class="_ui-space">
+            <view class="colorlist">
+                <text class="{{color === 'red' && 'select_block'}}">红色</text>
+                <text class="{{color === 'blue' && 'select_block'}}">蓝色</text>
+            </view>
+            <button class="_ui-button" hover-class="_ui-button-hover" bindtap="onChangeColor">切换背景颜色</button>
+        </view>
+    </showbox>
+</view>

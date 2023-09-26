@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="page-continer">
+    这是页面
+    <com1 id="com1" />
+    <view class="_px10">
+      <button hover-class="_ui-button-hover" bindtap="onClearClick">
+        通过selectComponent clear
+      </button>
+    </view>
+  </view>
+</view>

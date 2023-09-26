@@ -1,0 +1,11 @@
+<view class="container">
+  <showbox title="检测小程序是否更新">
+    <box>
+      <view class="_mb8">
+        返回值：{{ shouldUpdate }}
+      </view>
+      <button class="_ui-button" hover-class="_ui-button-hover" bindtap="handleCheckUpdate">检测小程序是否更新</button>
+    </box>
+  </showbox>
+</view>
+<include src="templates.xhsml" />

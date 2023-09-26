@@ -1,0 +1,38 @@
+<view class="container">
+  <showbox title="默认">
+    <box>
+      <view class="_ui-space">
+        <view>
+          收货人姓名: {{ addressInfo.userName }}
+        </view>
+
+        <!-- <view>
+          邮编: {{ addressInfo.postalCode }}
+        </view> -->
+
+        <view>
+          地区: {{ addressInfo.provinceName }}
+          {{ addressInfo.cityName }}
+          {{ addressInfo.countyName }}
+        </view>
+
+
+        <view>
+          收货地址: {{ addressInfo.detailInfo }}
+        </view>
+
+        <!-- <view>
+          国家码: {{ addressInfo.nationalCode }}
+        </view> -->
+
+        <view>
+          手机号码: {{ addressInfo.telNumber }}
+        </view>
+
+        <button class="_ui-button" hover-class="_ui-button-hover" bindtap="chooseAddress">获取收货地址</button>
+      </view>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />

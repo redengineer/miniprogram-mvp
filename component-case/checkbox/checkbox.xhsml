@@ -1,0 +1,93 @@
+<view class="container">
+  <showbox title="基础样式">
+    <box>
+      <view class="_ui-space">
+        <view class="_dflex _jc_space-between _ai_center">
+          <text>大</text>
+          <view class="select-base select-base-large">
+            <view>
+              <radio value="1" checked="{{radio1Checked}}" style="--dd04dc74: flex;" bindtap="handleRadio1Checked"  color="#FF2442" /> 未选中
+            </view>
+            <view>
+              <radio  checked="{{radio2Checked}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handleRadio2Checked"/> 选中
+            </view>
+            <view>
+              <radio style="--dd04dc74: flex;" disabled color="#FF2442" /> 禁用
+            </view>
+          </view>
+        </view>
+  
+        <view class="_dflex _jc_space-between _ai_center">
+          <text>中</text>
+          <view class="select-base">
+            <view>
+              <radio value="1" checked="{{radio1Checked}}" style="--dd04dc74: flex;" bindtap="handleRadio1Checked"  color="#FF2442" /> 未选中
+            </view>
+            <view>
+              <radio  checked="{{radio2Checked}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handleRadio2Checked"/> 选中
+            </view>
+            <view>
+              <radio style="--dd04dc74: flex;" disabled color="#FF2442" /> 禁用
+            </view>
+          </view>
+        </view>
+  
+        <view class="_dflex _jc_space-between _ai_center">
+          <text>小</text>
+          <view class="select-base select-base-small">
+            <view>
+              <radio value="1" checked="{{radio1Checked}}" style="--dd04dc74: flex;" bindtap="handleRadio1Checked"  color="#FF2442" /> 未选中
+            </view>
+            <view>
+              <radio  checked="{{radio2Checked}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handleRadio2Checked"/> 选中
+            </view>
+            <view>
+              <radio style="--dd04dc74: flex;" disabled color="#FF2442" /> 禁用
+            </view>
+          </view>
+        </view>
+      </view>
+      
+    </box>
+  </showbox>
+
+  <showbox title="推荐展示样式">
+    <box>
+      <view class="_ui-space">
+        <view class="select-suppose">
+          <text>标题描述</text>
+          <view>
+            <radio-group>
+              <radio value="1" style="--dd04dc74: flex;" checked color="#FF2442" /> 单选
+              <radio value="2" class="xhs-a-radio" style="--dd04dc74: flex;"  color="#FF2442" /> 单选
+            </radio-group>
+          </view>
+        </view>
+  
+        <view class="select-suppose">
+          <view class="_dflex _fd_column">
+            <text style="font-size: 14px;line-height: 18px;">标题描述</text>
+            <text style="font-size: 12px; color: #33333366;line-height: 20px;">可添加二级描述文本</text>
+          </view>
+          <view>
+            <radio checked="{{r1}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handelR1"/> 复选
+            <radio checked="{{r2}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handelR2"/> 复选
+            <radio checked="{{r3}}" style="--dd04dc74: flex;" color="#FF2442" bindtap="handelR3"/> 复选
+          </view>
+        </view>
+      </view>
+    </box>
+  </showbox>
+
+  <showbox title="点击同意按钮再继续">
+    <box>
+      <radio-group bindchange="changeAgree">
+        <radio value="isagree" style="--dd04dc74: flex;" color="#FF2442" checked="{{isAgree}}" bindtap="changeisAgree"/> 您需要同意再继续
+      </radio-group>
+
+      <button bindtap="continue">点击同意再继续</button>
+    </box>
+  </showbox>
+</view>
+
+<include src="templates.xhsml" />
